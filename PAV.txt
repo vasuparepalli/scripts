@@ -1,0 +1,1029 @@
+login as: aad4791
+Using keyboard-interactive authentication.
+AD Password:
+Last login: Wed Jan 22 16:30:01 2020 on ssh from 10.16.194.171
+$ cd /feplocal/preadj_perf_test/jenkins/db/sit
+$ cat del_clm_pav_sit.ksh
+#!/bin/ksh
+
+if [[ $# -eq 0 ]];then
+   echo "No Arguments were given, please try again by supplying cycle date and plan code..."
+   exit
+fi
+
+cycle="$1"
+plan="$2"
+echo "deleting pav claims for cycle date:"$cycle "and plan:"$plan
+
+
+
+sqlplus <<EOF
+$FEPLSIT@"(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=florasit-scan)(PORT=1521))(CONNECT_DATA= (SERVICE_NAME=FEPLSIT_OLTP)))"
+@/feplocal/preadj_perf_test/jenkins/db/sit/clean_clm_pav_sit $cycle $plan
+commit;
+EOF
+
+
+$ cat /feplocal/preadj_perf_test/jenkins/db/sit/clean_clm_pav_sit
+cat: cannot open /feplocal/preadj_perf_test/jenkins/db/sit/clean_clm_pav_sit
+$
+$ cat /feplocal/preadj_perf_test/jenkins/db/sit/clean_clm_pav_sit.sql
+cat: cannot open /feplocal/preadj_perf_test/jenkins/db/sit/clean_clql
+$
+$
+$ cat /feplocal/preadj_perf_test/jenkins/db/sit/clean_clm_pav_sit.sql
+spool deleteClaimList.out
+set serveroutput on size unlimited
+
+DEFINE cyc_dt = '&1'
+DEFINE plan_cd = '&2'
+
+DECLARE
+
+   v_cyc_dt      DATE        := TO_DATE('&1', 'YYYY-MM-DD');
+   v_plan_cd     VARCHAR2(3) := '&2';
+   v_ctr         INTEGER     := 0;
+
+   CURSOR v_csr is
+       SELECT distinct DCN
+         from fepl_vchr.pav_clm_cyc_trans
+        where cyc_dt =  v_cyc_dt
+        and   plan_cd = v_plan_cd
+        order by dcn;
+
+BEGIN
+
+   FOR v_rec IN v_csr
+   LOOP
+
+       v_ctr := v_ctr + 1;
+
+       DELETE FROM FEPL_CLAIM.FEMS_PROC_STUS WHERE TRANS_ID = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.MTGW_MSG_PROC WHERE TRANS_ID = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.BILLG_PROV_SCDY_ID
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_DG_CD
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_VAL_CD
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_COND_INFO
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.BUNDLED_CLM_LINE
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_EDIT_ERR where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.CLMCHK_CUR_LINE_LVL_DATA
+                   where CLMCHK_CLM_LVL_DATA_ID  IN (SELECT CLMCHK_CLM_LVL_DATA_ID from FEPL_CLAIM.CLMCHK_CLM_LVL_DATA where dcn = v_rec.dcn );
+
+       DELETE FROM FEPL_CLAIM.CLMCHK_HIST_LINE_LVL_DATA
+                   where CLMCHK_CLM_LVL_DATA_ID  IN (SELECT CLMCHK_CLM_LVL_DATA_ID from FEPL_CLAIM.CLMCHK_CLM_LVL_DATA where dcn = v_rec.dcn );
+
+       DELETE FROM FEPL_CLAIM.CAS_LINE_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_DG_PTR_SEG
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_OTH_PAYR_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_PROF_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_REV_ACTN
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_SUPPL_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+        delete from FEPL_CLAIM.CLM_LINE_SUPPL_ELEM where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_REV_ACTN
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_OCCRN_INFO
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_OC_SUPPL_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CAS_CLM_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_OTH_PAYR_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_OTH_PROC
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_TRTMT_CD
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_SPLT_ALPH_SUFX where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.CLMCHK_CLM_LVL_DATA where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.CLM_PROF
+              where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_INSTL
+              where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.outbd_clm_msg_evnt
+              where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_MSG_ELEM
+              where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_edit_err where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.clm_err_pyld
+              where err_log_id in (select err_log_id from FEPL_CLAIM.clm_err_log where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_err_pyld
+              where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.addnl_err_info where err_log_id in (select err_log_id from FEPL_CLAIM.clm_err_log where dcn = v_rec.dcn);
+
+delete from FEPL_CLAIM.CLM_SUBR_REFN_DATA where clm_vers_id in (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+     DELETE FROM FEPL_CLAIM.clm_err_log where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.clm_msg_cmpt
+              where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_aud_pyld where log_id in (select log_id from FEPL_CLAIM.clm_aud_log where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_aud_log where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.outbd_clm_msg_pyld where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where  dcn = v_rec.dcn);
+
+       delete  from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.inbd_clm_msg_pyld where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_stus_acty where  dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_STUS_ACTY where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.inbd_clm_msg_pyld where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_stus_acty where  dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_line_dentl where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_dentl where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_STUS_ACTY where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_ASGNE_DATA where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_EOB_ADDR where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_vers where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.clm where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.BYPS_INVD_RESP where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_AUTH.AUTH_CLM where  dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_VCHR.PAV_STUS_ACTY where DCN = v_rec.dcn;
+
+       DELETE FROM FEPL_VCHR.PAV_EDIT_ERR_LOG where DCN = v_rec.dcn;
+
+       DBMS_OUTPUT.PUT_LINE(' --> deleted DCN .... = '||v_rec.dcn);
+
+   commit;
+   END LOOP;
+
+   DBMS_OUTPUT.PUT_LINE(' --> Number of deleted DCN .... = '||v_ctr);
+
+END;
+
+/
+commit;
+$
+$
+$
+$
+$ cat run_pav_sit.ksh
+#!/bin/ksh
+
+if [[ $# -eq 0 ]];then
+   echo "No Arguments were given, please try again by supplying cycle date and plan code..."
+   exit
+fi
+
+cycle="$1"
+plan="$2"
+echo "deleting pav claims for cycle date:"$cycle "and plan:"$plan
+
+
+
+sqlplus <<EOF
+$FEPLSIT@"(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=florasit-scan)(PORT=1521))(CONNECT_DATA= (SERVICE_NAME=FEPLSIT_OLTP)))"
+@/feplocal/preadj_perf_test/jenkins/db/sit/clean_pav_sit $cycle $plan
+commit;
+EOF
+
+
+$ cat /feplocal/preadj_perf_test/jenkins/db/sit/clean_pav_sit.sql
+spool delete_pav_entries.out
+
+set serveroutput on size unlimited
+
+define INP_CYC_DT  = '&1'
+define INP_PLAN_CD = '&2'
+
+declare
+
+   v_cyc_dt      DATE        := TO_DATE('&1', 'YYYY-MM-DD');
+   v_plan_cd     VARCHAR2(3) := '&2';
+   --v_cyc_dt         DATE        := TO_DATE('2001-01-01', 'YYYY-MM-DD');
+   --v_plan_cd        VARCHAR2(3) := '190';
+
+  cursor v_cyc_csr is
+       select plan_cd
+             ,cyc_dt
+             ,clm_vchr_id
+             ,dcn
+             ,clm_vers_id
+             ,pav_clm_cyc_trans_id
+         from pav_clm_cyc_trans
+        where cyc_dt =  v_cyc_dt
+        and   plan_cd = v_plan_cd
+        order by clm_vchr_id, dcn, clm_vers_id;
+
+   cursor v_835_csr is
+          select  rowid
+                 ,clm_vchr_id
+            from clm_vchr
+          where  clm_vchr_id like '%'||to_char(v_cyc_dt, 'YYYYMMDD')||v_plan_cd||'%'
+          order by clm_vchr_id;
+
+begin
+
+    -- delete old PAV entries associated with a specific cycle date
+
+    dbms_output.put_line('--> about to delete PAV entries for CYC_DT .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd);
+
+    for v_rec in v_cyc_csr
+    loop
+
+        delete from pav_1099_trans where pav_clm_cyc_trans_id = v_rec.pav_clm_cyc_trans_id;
+        delete from pav_cash_mgt where pav_clm_cyc_trans_id = v_rec.pav_clm_cyc_trans_id;
+        delete from pav_gl_trans where pav_clm_cyc_trans_id = v_rec.pav_clm_cyc_trans_id;
+        delete from pav_stus_acty where clm_vers_id         = v_rec.clm_vers_id;
+        delete from pav_clm_cyc_trans where pav_clm_cyc_trans_id = v_rec.pav_clm_cyc_trans_id;
+        dbms_output.put_line('--> about to delete PAV entries for CYC_DT .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd||' for trans_id = '||v_rec.pav_clm_cyc_trans_id);
+
+    end loop;
+
+    delete from prov_retnn_det where trunc(acty_dt) = v_cyc_dt and plan_cd = v_plan_cd;
+    delete from prov_retnn_summ where trunc(cyc_run_dt) = v_cyc_dt and plan_cd = v_plan_cd;
+
+    dbms_output.put_line('--> Completed deletion of PAV entries for  .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd);
+
+    -- delete 835 entries associated with a specific cycle date
+
+    dbms_output.put_line('--> About to delete 835 entries for CYC_DT .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd);
+
+    for v_835_rec in v_835_csr
+    loop
+        -- delete all child tables associated with CLM_VCHR_PAYMT table
+        dbms_output.put_line('--> about to delete 835 entries for CLM_VCHR_ID = '||v_835_rec.clm_vchr_id);
+        delete from clm_vchr_op_paymt a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+
+        delete from clm_vchr_ip_paymt a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_paymt_adjtmt a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_paymt_nm a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_paymt_refnc_data a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_paymt_suppary_info a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        -- delete all child tables associated with CLM_VCHR_SERVC_PAYMT table
+
+        delete from clm_vchr_hlth_care_remk_cd a
+        where exists (select 'X' from
+                      clm_vchr_servc_paymt b
+                      where b.clm_vchr_servc_paymt_id = a.clm_vchr_servc_paymt_id
+                      and exists (select 'X'
+                                  from   clm_vchr_paymt c
+                                  where c.clm_vchr_paymt_id = b.clm_vchr_paymt_id
+                                  and   c.clm_vchr_id       = v_835_rec.clm_vchr_id));
+
+        delete clm_vchr_servc_adjtmt a
+        where exists (select 'X'
+                      from   clm_vchr_servc_paymt b
+                      where b.clm_vchr_servc_paymt_id = a.clm_vchr_servc_paymt_id
+                      and exists (select 'X'
+                                  from   clm_vchr_paymt c
+                                  where c.clm_vchr_paymt_id = b.clm_vchr_paymt_id
+                                  and   c.clm_vchr_id       = v_835_rec.clm_vchr_id));
+
+        delete clm_vchr_servc_idntn a
+        where exists (select 'X'
+                      from   clm_vchr_servc_paymt b
+                      where b.clm_vchr_servc_paymt_id = a.clm_vchr_servc_paymt_id
+                      and exists (select 'X'
+                                  from   clm_vchr_paymt c
+                                  where c.clm_vchr_paymt_id = b.clm_vchr_paymt_id
+                                  and   c.clm_vchr_id       = v_835_rec.clm_vchr_id));
+
+        delete clm_vchr_servc_paymt_suppl a
+        where exists (select 'X'
+                      from   clm_vchr_servc_paymt b
+                      where b.clm_vchr_servc_paymt_id = a.clm_vchr_servc_paymt_id
+                      and exists (select 'X'
+                                  from   clm_vchr_paymt c
+                                  where c.clm_vchr_paymt_id = b.clm_vchr_paymt_id
+                                  and   c.clm_vchr_id       = v_835_rec.clm_vchr_id));
+
+        delete clm_vchr_servc_paymt a
+        where exists (select 'X'
+                      from   clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        -- finally the parent able - clm_vchr_paymt table (CLP segments)
+
+        delete from clm_vchr_paymt where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        -- delete all child tables associated with CLM_VCHR_PAYR and CLM_VCHR_PAYE tables
+
+        delete from clm_vchr_addnl_payr where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_payr_ctact_comcn a
+        where exists (select 'X'
+                        from clm_vchr_payr_ctact b
+                       where b.clm_vchr_payr_ctact_id = b.clm_vchr_payr_ctact_id
+                       and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_addnl_paye where clm_vchr_id  = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_prov_adjtmt_item a
+        where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_prov_adjtmt a
+        where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_prov_suppl_info a
+        where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_prov_summ a
+        where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_payr_ctact where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_paye where clm_vchr_id        = v_835_rec.clm_vchr_id;
+        delete from clm_vchr_payr where clm_vchr_id        = v_835_rec.clm_vchr_id;
+
+        -- finally the parent able - clm_vchr table
+
+        delete from clm_vchr where clm_vchr_id             = v_835_rec.clm_vchr_id;
+
+    end loop;
+
+    delete from clm_vchr_inp_trans
+    where plan_cd = v_plan_cd
+    and   run_dt  = v_cyc_dt;
+
+    delete from clm_vchr_outbd_msg
+    where plan_cd = v_plan_cd
+    and   run_dt  = v_cyc_dt;
+
+    dbms_output.put_line('--> Completed - delete PAV entries at '||current_timestamp);
+
+end;
+/
+spool off
+
+$
+$
+$
+$
+$
+$ cat run_dss_retn.ksh
+#!/bin/ksh
+
+if [[ $# -eq 0 ]];then
+   echo "No Arguments were given, please try again by supplying cycle date and plan code..."
+   exit
+fi
+
+cycle="$1"
+plan="$2"
+echo "deleting pav claims for cycle date:"$cycle "and plan:"$plan
+
+
+
+sqlplus <<EOF
+$FEPLSIT_RPTW@"(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=florasit-scan)(PORT=1521))(CONNECT_DATA= (SERVICE_NAME=FEPLSIT_RPTW)))"
+@/feplocal/preadj_perf_test/jenkins/db/sit/clean_dss_retn $cycle $plan
+commit;
+EOF
+
+
+$ cat /feplocal/preadj_perf_test/jenkins/db/sit/clean_dss_retn.sql
+spool delete_pav_entries.out
+
+set serveroutput on size unlimited
+
+define INP_CYC_DT  = '&1'
+define INP_PLAN_CD = '&2'
+
+declare
+
+   v_cyc_dt      DATE        := TO_DATE('&1', 'YYYY-MM-DD');
+   v_plan_cd     VARCHAR2(3) := '&2';
+   --v_cyc_dt         DATE        := TO_DATE('2001-01-01', 'YYYY-MM-DD');
+   --v_plan_cd        VARCHAR2(3) := '190';
+
+
+begin
+
+    -- delete PAV Retention entries associated with a specific cycle date
+
+    delete from fepl_rept.prov_retnn_det where trunc(acty_dt) = v_cyc_dt and plan_cd= v_plan_cd;
+    delete from fepl_rept.prov_retnn_summ where trunc(cyc_run_dt) = v_cyc_dt and plan_cd= v_plan_cd;
+
+    dbms_output.put_line('--> Completed deletion of PAV entries for  .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd);
+
+end;
+/
+spool off
+
+
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$ cd /feplocal/preadj_perf_test/jenkins/db/e2e
+$
+$
+$ cat del_clm_pav_e2e.ksh
+!/bin/ksh
+
+if [[ $# -eq 0 ]];then
+   echo "No Arguments were given, please try again by supplying cycle date and plan code..."
+   exit
+fi
+
+cycle="$1"
+plan="$2"
+echo "deleting pav claims for cycle date:"$cycle "and plan:"$plan
+
+
+
+sqlplus <<EOF
+$FEPLE2E@"(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=floraee2)(PORT=1521))(CONNECT_DATA= (SERVICE_NAME=FEPLE2E)))"
+@/feplocal/preadj_perf_test/jenkins/db/sit/clean_clm_pav_sit $cycle $plan
+commit;
+EOF
+$
+$
+$ cat /feplocal/preadj_perf_test/jenkins/db/sit/clean_clm_pav_sit.sql
+spool deleteClaimList.out
+set serveroutput on size unlimited
+
+DEFINE cyc_dt = '&1'
+DEFINE plan_cd = '&2'
+
+DECLARE
+
+   v_cyc_dt      DATE        := TO_DATE('&1', 'YYYY-MM-DD');
+   v_plan_cd     VARCHAR2(3) := '&2';
+   v_ctr         INTEGER     := 0;
+
+   CURSOR v_csr is
+       SELECT distinct DCN
+         from fepl_vchr.pav_clm_cyc_trans
+        where cyc_dt =  v_cyc_dt
+        and   plan_cd = v_plan_cd
+        order by dcn;
+
+BEGIN
+
+   FOR v_rec IN v_csr
+   LOOP
+
+       v_ctr := v_ctr + 1;
+
+       DELETE FROM FEPL_CLAIM.FEMS_PROC_STUS WHERE TRANS_ID = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.MTGW_MSG_PROC WHERE TRANS_ID = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.BILLG_PROV_SCDY_ID
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_DG_CD
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_VAL_CD
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_COND_INFO
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.BUNDLED_CLM_LINE
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_EDIT_ERR where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.CLMCHK_CUR_LINE_LVL_DATA
+                   where CLMCHK_CLM_LVL_DATA_ID  IN (SELECT CLMCHK_CLM_LVL_DATA_ID from FEPL_CLAIM.CLMCHK_CLM_LVL_DATA where dcn = v_rec.dcn );
+
+       DELETE FROM FEPL_CLAIM.CLMCHK_HIST_LINE_LVL_DATA
+                   where CLMCHK_CLM_LVL_DATA_ID  IN (SELECT CLMCHK_CLM_LVL_DATA_ID from FEPL_CLAIM.CLMCHK_CLM_LVL_DATA where dcn = v_rec.dcn );
+
+       DELETE FROM FEPL_CLAIM.CAS_LINE_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_DG_PTR_SEG
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_OTH_PAYR_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_PROF_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_REV_ACTN
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE_SUPPL_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+        delete from FEPL_CLAIM.CLM_LINE_SUPPL_ELEM where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_LINE
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_REV_ACTN
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_OCCRN_INFO
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_OC_SUPPL_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CAS_CLM_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_OTH_PAYR_DATA
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_OTH_PROC
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_TRTMT_CD
+                   where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_SPLT_ALPH_SUFX where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.CLMCHK_CLM_LVL_DATA where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.CLM_PROF
+              where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_INSTL
+              where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.outbd_clm_msg_evnt
+              where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_MSG_ELEM
+              where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_edit_err where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.clm_err_pyld
+              where err_log_id in (select err_log_id from FEPL_CLAIM.clm_err_log where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_err_pyld
+              where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.addnl_err_info where err_log_id in (select err_log_id from FEPL_CLAIM.clm_err_log where dcn = v_rec.dcn);
+
+delete from FEPL_CLAIM.CLM_SUBR_REFN_DATA where clm_vers_id in (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+     DELETE FROM FEPL_CLAIM.clm_err_log where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.clm_msg_cmpt
+              where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_aud_pyld where log_id in (select log_id from FEPL_CLAIM.clm_aud_log where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_aud_log where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.outbd_clm_msg_pyld where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_msg_trans where  dcn = v_rec.dcn);
+
+       delete  from FEPL_CLAIM.clm_msg_trans where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.inbd_clm_msg_pyld where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_stus_acty where  dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_STUS_ACTY where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.inbd_clm_msg_pyld where clm_msg_id in (select clm_msg_id from FEPL_CLAIM.clm_stus_acty where  dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_line_dentl where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_dentl where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_STUS_ACTY where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_ASGNE_DATA where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.CLM_EOB_ADDR where clm_vers_id  IN (select clm_vers_id from FEPL_CLAIM.clm_vers where dcn = v_rec.dcn);
+
+       DELETE FROM FEPL_CLAIM.clm_vers where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.clm where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_CLAIM.BYPS_INVD_RESP where dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_AUTH.AUTH_CLM where  dcn = v_rec.dcn;
+
+       DELETE FROM FEPL_VCHR.PAV_STUS_ACTY where DCN = v_rec.dcn;
+
+       DELETE FROM FEPL_VCHR.PAV_EDIT_ERR_LOG where DCN = v_rec.dcn;
+
+       DBMS_OUTPUT.PUT_LINE(' --> deleted DCN .... = '||v_rec.dcn);
+
+   commit;
+   END LOOP;
+
+   DBMS_OUTPUT.PUT_LINE(' --> Number of deleted DCN .... = '||v_ctr);
+
+END;
+
+/
+commit;
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$ cat run_pav_e2e.ksh
+#!/bin/ksh
+
+if [[ $# -eq 0 ]];then
+   echo "No Arguments were given, please try again by supplying cycle date and plan code..."
+   exit
+fi
+
+cycle="$1"
+plan="$2"
+echo "deleting pav claims for cycle date:"$cycle "and plan:"$plan
+
+
+
+sqlplus <<EOF
+$FEPLE2E@"(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=floraee2)(PORT=1521))(CONNECT_DATA= (SERVICE_NAME=FEPLE2E)))"
+@/feplocal/preadj_perf_test/jenkins/db/sit/clean_pav_sit $cycle $plan
+commit;
+EOF
+$
+$
+$ cat /feplocal/preadj_perf_test/jenkins/db/sit/clean_pav_sit.sql
+spool delete_pav_entries.out
+
+set serveroutput on size unlimited
+
+define INP_CYC_DT  = '&1'
+define INP_PLAN_CD = '&2'
+
+declare
+
+   v_cyc_dt      DATE        := TO_DATE('&1', 'YYYY-MM-DD');
+   v_plan_cd     VARCHAR2(3) := '&2';
+   --v_cyc_dt         DATE        := TO_DATE('2001-01-01', 'YYYY-MM-DD');
+   --v_plan_cd        VARCHAR2(3) := '190';
+
+  cursor v_cyc_csr is
+       select plan_cd
+             ,cyc_dt
+             ,clm_vchr_id
+             ,dcn
+             ,clm_vers_id
+             ,pav_clm_cyc_trans_id
+         from pav_clm_cyc_trans
+        where cyc_dt =  v_cyc_dt
+        and   plan_cd = v_plan_cd
+        order by clm_vchr_id, dcn, clm_vers_id;
+
+   cursor v_835_csr is
+          select  rowid
+                 ,clm_vchr_id
+            from clm_vchr
+          where  clm_vchr_id like '%'||to_char(v_cyc_dt, 'YYYYMMDD')||v_plan_cd||'%'
+          order by clm_vchr_id;
+
+begin
+
+    -- delete old PAV entries associated with a specific cycle date
+
+    dbms_output.put_line('--> about to delete PAV entries for CYC_DT .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd);
+
+    for v_rec in v_cyc_csr
+    loop
+
+        delete from pav_1099_trans where pav_clm_cyc_trans_id = v_rec.pav_clm_cyc_trans_id;
+        delete from pav_cash_mgt where pav_clm_cyc_trans_id = v_rec.pav_clm_cyc_trans_id;
+        delete from pav_gl_trans where pav_clm_cyc_trans_id = v_rec.pav_clm_cyc_trans_id;
+        delete from pav_stus_acty where clm_vers_id         = v_rec.clm_vers_id;
+        delete from pav_clm_cyc_trans where pav_clm_cyc_trans_id = v_rec.pav_clm_cyc_trans_id;
+        dbms_output.put_line('--> about to delete PAV entries for CYC_DT .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd||' for trans_id = '||v_rec.pav_clm_cyc_trans_id);
+
+    end loop;
+
+    delete from prov_retnn_det where trunc(acty_dt) = v_cyc_dt and plan_cd = v_plan_cd;
+    delete from prov_retnn_summ where trunc(cyc_run_dt) = v_cyc_dt and plan_cd = v_plan_cd;
+
+    dbms_output.put_line('--> Completed deletion of PAV entries for  .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd);
+
+    -- delete 835 entries associated with a specific cycle date
+
+    dbms_output.put_line('--> About to delete 835 entries for CYC_DT .... = '||v_cyc_dt||' for PLAN CD = '||v_plan_cd);
+
+    for v_835_rec in v_835_csr
+    loop
+        -- delete all child tables associated with CLM_VCHR_PAYMT table
+        dbms_output.put_line('--> about to delete 835 entries for CLM_VCHR_ID = '||v_835_rec.clm_vchr_id);
+        delete from clm_vchr_op_paymt a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+
+        delete from clm_vchr_ip_paymt a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_paymt_adjtmt a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_paymt_nm a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_paymt_refnc_data a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_paymt_suppary_info a
+        where exists (select 'X' from
+                      clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        -- delete all child tables associated with CLM_VCHR_SERVC_PAYMT table
+
+        delete from clm_vchr_hlth_care_remk_cd a
+        where exists (select 'X' from
+                      clm_vchr_servc_paymt b
+                      where b.clm_vchr_servc_paymt_id = a.clm_vchr_servc_paymt_id
+                      and exists (select 'X'
+                                  from   clm_vchr_paymt c
+                                  where c.clm_vchr_paymt_id = b.clm_vchr_paymt_id
+                                  and   c.clm_vchr_id       = v_835_rec.clm_vchr_id));
+
+        delete clm_vchr_servc_adjtmt a
+        where exists (select 'X'
+                      from   clm_vchr_servc_paymt b
+                      where b.clm_vchr_servc_paymt_id = a.clm_vchr_servc_paymt_id
+                      and exists (select 'X'
+                                  from   clm_vchr_paymt c
+                                  where c.clm_vchr_paymt_id = b.clm_vchr_paymt_id
+                                  and   c.clm_vchr_id       = v_835_rec.clm_vchr_id));
+
+        delete clm_vchr_servc_idntn a
+        where exists (select 'X'
+                      from   clm_vchr_servc_paymt b
+                      where b.clm_vchr_servc_paymt_id = a.clm_vchr_servc_paymt_id
+                      and exists (select 'X'
+                                  from   clm_vchr_paymt c
+                                  where c.clm_vchr_paymt_id = b.clm_vchr_paymt_id
+                                  and   c.clm_vchr_id       = v_835_rec.clm_vchr_id));
+
+        delete clm_vchr_servc_paymt_suppl a
+        where exists (select 'X'
+                      from   clm_vchr_servc_paymt b
+                      where b.clm_vchr_servc_paymt_id = a.clm_vchr_servc_paymt_id
+                      and exists (select 'X'
+                                  from   clm_vchr_paymt c
+                                  where c.clm_vchr_paymt_id = b.clm_vchr_paymt_id
+                                  and   c.clm_vchr_id       = v_835_rec.clm_vchr_id));
+
+        delete clm_vchr_servc_paymt a
+        where exists (select 'X'
+                      from   clm_vchr_paymt b
+                      where b.clm_vchr_paymt_id = a.clm_vchr_paymt_id
+                      and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        -- finally the parent able - clm_vchr_paymt table (CLP segments)
+
+        delete from clm_vchr_paymt where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        -- delete all child tables associated with CLM_VCHR_PAYR and CLM_VCHR_PAYE tables
+
+        delete from clm_vchr_addnl_payr where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_payr_ctact_comcn a
+        where exists (select 'X'
+                        from clm_vchr_payr_ctact b
+                       where b.clm_vchr_payr_ctact_id = b.clm_vchr_payr_ctact_id
+                       and   b.clm_vchr_id = v_835_rec.clm_vchr_id);
+
+        delete from clm_vchr_addnl_paye where clm_vchr_id  = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_prov_adjtmt_item a
+        where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_prov_adjtmt a
+        where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_prov_suppl_info a
+        where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_prov_summ a
+        where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_payr_ctact where clm_vchr_id = v_835_rec.clm_vchr_id;
+
+        delete from clm_vchr_paye where clm_vchr_id        = v_835_rec.clm_vchr_id;
+        delete from clm_vchr_payr where clm_vchr_id        = v_835_rec.clm_vchr_id;
+
+        -- finally the parent able - clm_vchr table
+
+        delete from clm_vchr where clm_vchr_id             = v_835_rec.clm_vchr_id;
+
+    end loop;
+
+    delete from clm_vchr_inp_trans
+    where plan_cd = v_plan_cd
+    and   run_dt  = v_cyc_dt;
+
+    delete from clm_vchr_outbd_msg
+    where plan_cd = v_plan_cd
+    and   run_dt  = v_cyc_dt;
+
+    dbms_output.put_line('--> Completed - delete PAV entries at '||current_timestamp);
+
+end;
+/
+spool off
+
+$
+$
+$
+$
+$
+$catn_dss_retn_e2e.ksh
+$
+$
+$
+$ cat run_dss_retn_e2e.ksh
+cat: cannot open run_dss_retn_e2e.ksh
+$ cd /feplocal/preadj_perf_test/jenkins/db/sit/
+$
+ksh: ^[[A^[[A^[[B^[[B^[[B:  not found
+$
+$ cat run_dss_retn_e2e.ksh
+cat: cannot open run_dss_retn_e2e.ksh
+$
+$
+$
+$ ls
+bkp.clean_pav_sit.sql          clean_dss_retn.sql             clean_pav_sit.sql              delete_pav_entries.out         run_pav_entries_update.ksh
+clean_clm_pav_sit.sql          clean_dss_retn_e2e.sql         del_clm_pav_sit.ksh            run_dss_retn.ksh               run_pav_sit.ksh
+clean_clm_pav_sit.sql_bk_vasu  clean_pav_entries_udpate.sql   deleteClaimList.out            run_dss_retn_e2e.ksh
+
+
+
+
+###############################
+
+login as: aad4791
+Using keyboard-interactive authentication.
+AD Password:
+Last login: Wed Jan 22 16:31:20 2020 on ssh from 10.16.194.171
+$ cd /feplocal/preadj_perf_test/jenkins/db/sit/
+$ ls -lart
+total 176
+-rwxrwxrwx    1 aaa1320  staff          8102 Oct 19 2016  bkp.clean_pav_sit.sql
+-rwxrwxrwx    1 aaa1320  staff          8141 Mar 30 2017  clean_pav_sit.sql
+-rwxrwxrwx    1 aaa1320  staff           778 Jun  2 2017  clean_dss_retn.sql
+-rwxrwxrwx    1 aaa1320  staff           640 Jun  5 2017  clean_pav_entries_udpa                                                                                        te.sql
+-rwxrwxrwx    1 aaa1320  staff          1840 Nov  9 2017  deleteClaimList.out
+-rwxrwxrwx    1 aaa1320  staff           778 Apr 23 2018  clean_dss_retn_e2e.sql
+-rwxrwxrwx    1 aaa1320  staff           365 Apr 23 2018  delete_pav_entries.out
+drwxrwxrwx    7 aaa1320  staff          4096 Jun 12 2018  ..
+-rwxrwxrwx    1 aaa1320  staff           456 Mar  7 2019  del_clm_pav_sit.ksh
+-rwxrwxrwx    1 aaa1320  staff           452 Mar  7 2019  run_pav_sit.ksh
+-rwxrwxrwx    1 aaa1320  staff           458 Mar  7 2019  run_dss_retn.ksh
+-rw-r--r--    1 aab3757  staff             1 Mar  7 2019  run_dss_retn_e2e.ksh
+wxrwxrwx    1 aaa1320  staff           408 Mar  7 2019  run_pav_entries_update.k                                                                                        sh
+-rwxr-xr-x    1 aad4791  staff          8264 Jul 25 2019  clean_clm_pav_sit.sql_                                                                                        bk_vasu
+-rwxrwxrwx    1 aaa1320  staff          8333 Jul 25 2019  clean_clm_pav_sit.sql
+drwxrwxrwx    2 aaa1320  staff          4096 Oct 29 15:53 .
+$
+$
+$
+$ ls -lart
+total 176
+-rwxrwxrwx    1 aaa1320  staff          8102 Oct 19 2016  bkp.clean_pav_sit.sql
+-rwxrwxrwx    1 aaa1320  staff          8141 Mar 30 2017  clean_pav_sit.sql
+-rwxrwxrwx    1 aaa1320  staff           778 Jun  2 2017  clean_dss_retn.sql
+-rwxrwxrwx    1 aaa1320  staff           640 Jun  5 2017  clean_pav_entries_udpate.sql
+-rwxrwxrwx    1 aaa1320  staff          1840 Nov  9 2017  deleteClaimList.out
+-rwxrwxrwx    1 aaa1320  staff           778 Apr 23 2018  clean_dss_retn_e2e.sql
+-rwxrwxrwx    1 aaa1320  staff           365 Apr 23 2018  delete_pav_entries.out
+drwxrwxrwx    7 aaa1320  staff          4096 Jun 12 2018  ..
+-rwxrwxrwx    1 aaa1320  staff           456 Mar  7 2019  del_clm_pav_sit.ksh
+-rwxrwxrwx    1 aaa1320  staff           452 Mar  7 2019  run_pav_sit.ksh
+-rwxrwxrwx    1 aaa1320  staff           458 Mar  7 2019  run_dss_retn.ksh
+-rw-r--r--    1 aab3757  staff             1 Mar  7 2019  run_dss_retn_e2e.ksh
+wxrwxrwx    1 aaa1320  staff           408 Mar  7 2019  run_pav_entries_update.ksh
+-rwxr-xr-x    1 aad4791  staff          8264 Jul 25 2019  clean_clm_pav_sit.sql_bk_vasu
+-rwxrwxrwx    1 aaa1320  staff          8333 Jul 25 2019  clean_clm_pav_sit.sql
+drwxrwxrwx    2 aaa1320  staff          4096 Oct 29 15:53 .
+$
+$
+$ cat run_dss_retn_e2e.ksh
+cat: cannot open run_dss_retn_e2e.ksh
+$
