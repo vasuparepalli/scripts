@@ -1,0 +1,617 @@
+properties([parameters([choice(choices: ['batchsit', 'batche2e'], description: '', name: 'Env'), extendedChoice(defaultValue: 'CAREFIRST', description: '', multiSelectDelimiter: ',', name: 'PlanOrg', quoteValue: false, saveJSONParameterToFile: false, type: 'PT_MULTI_SELECT', value: 'CAREFIRST,BCBSNC,PREMERA,WELLMARK,BCBSNE', visibleItemCount: 5), string(defaultValue: '', description: '', name: 'CycleDate', trim: false), string(defaultValue: '', description: '', name: 'BatchCyleDate', trim: false), string(defaultValue: '', description: '', name: 'pCycleDate', trim: false), string(defaultValue: '', description: '', name: 'spCycleDate', trim: false)])])
+
+node {
+  echo "Deletion of claims.."
+def deleteClaimsExec= [:]
+for (int i = 0; i <1; i++) {
+def index = i
+deleteClaimsExec["branch${i}"] = {
+    build job: 'S00-DeletionofClaims', parameters: [
+      string(name:'dummy', value: "${index}")]
+}
+}
+parallel deleteClaimsExec
+
+echo "Set Cycle Date Execution.."
+def setCycleExec= [:]
+def setCycleExecOrgs="${params.PlanOrg}"
+def pCycleDate="${params.pCycleDate}"
+def environment="${params.Env}"
+ echo "Changes are from ${params.Env}"
+def setCycleExecOrg=setCycleExecOrgs.split(",") as String[]
+    println("Size of organizations")
+    println(setCycleExecOrg.size())
+for (int i = 0; i < setCycleExecOrg.size(); i++) {
+  def index = i
+def pavOrgName=setCycleExecOrg[i];
+  setCycleExec["branch${i}"] = {
+    build job: 'S02-SetCycleDate', parameters: [
+      string(name: 'PlanOrg', value:"${pavOrgName}"),
+string(name: 'pCycleDate', value:"${pcycledate}"),
+string(name: 'Env', value:"${environment}"),
+  string(name:'dummy', value: "${index}")]
+  }
+}
+parallel setCycleExec
+
+def executeUCV07Exec= [:]
+    echo "Changes are from ${params.PlanOrg}"
+    def UCV07orgSelected="${params.PlanOrg}"
+    def UCV07planToOrg = [:]
+    UCV07planToOrg.put('CAREFIRST', "080,580,581")
+    UCV07planToOrg.put('BCBSNC', "810")
+    UCV07planToOrg.put('PREMERA', "430,939")
+UCV07planToOrg.put('WELLMARK', "140,889")
+UCV07planToOrg.put('BCBSNE', "260,760")
+    println(UCV07planToOrg.get('org1'))
+    def UCV07org=UCV07orgSelected.split(",") as String[]
+    println("Size of organizations")
+    println(UCV07org.size())
+def UCV07environment="${params.Env}"
+     echo "Changes are from ${params.Env}"
+      def UCV07pCycleDate="${params.pCycleDate}"
+     echo "Changes are from ${params.pCycleDate}"
+        def UCV07spCycleDate="${params.spCycleDate}"
+     echo "Changes are from ${params.spCycleDate}"
+def UCV07cycledate="${params.CycleDate}"
+     echo "Changes are from ${params.CycleDate}"
+def UCV07batchcycledate="${params.BatchCyleDate}"
+     echo "Changes are from ${params.BatchCyleDate}"
+
+    int UCV07counter=0;
+for(int i=0;i<UCV07org.size();i++){
+        println("Organization is")
+        println(UCV07org[i])
+        println(UCV07planToOrg.get(UCV07org[i]));
+        def UCV07plans=UCV07planToOrg.get(UCV07org[i]) as String[];
+        int UCV07plansForOrg=UCV07plans.count(',');
+        println("Count is: "+UCV07plansForOrg)
+        def UCV07finalPlans;
+        int UCV07totalIterations=0;
+        if(UCV07plansForOrg==0){
+           println("Count is zero")
+           println(UCV07planToOrg.get(UCV07org[i]))
+       }
+else{
+           println("Count is more than zeroo")
+           UCV07finalPlans=UCV07planToOrg.get(UCV07org[i]).split(',') as String[];
+           println(UCV07finalPlans);
+           println(UCV07finalPlans.size())
+           UCV07totalIterations=UCV07finalPlans.size()-1;
+       }
+         for(int j=0;j<=UCV07totalIterations;j++){
+            def UCV07pavOrgName;
+            def UCV07pavPlanName;
+            UCV07counter=UCV07counter+1;
+            def index=UCV07counter
+             if(UCV07plansForOrg==0){
+             UCV07pavOrgName=UCV07org[i];
+             UCV07pavPlanName=UCV07planToOrg.get(UCV07org[i]);
+             }
+             else{
+             UCV07pavOrgName=UCV07org[i];
+             UCV07pavPlanName=UCV07finalPlans[j];
+            println(UCV07finalPlans[j])
+             }
+            executeUCV07Exec["branch${UCV07counter}"] = {
+            sleep (10)
+            build job: 'S03-EexuteUCV07', parameters: [
+            string(name: 'PlanOrg', value:"${UCV07pavOrgName}"),
+            string(name: 'PlanName', value:"${UCV07pavPlanName}"),
+string(name: 'Env', value:"${UCV07environment}"),
+string(name: 'pCycleDate', value:"${UCV07pCycleDate}"),
+string(name: 'spCycleDate', value:"${UCV07spCycleDate}"),
+            string(name:'dummy', value: "${index}")]
+        }
+    }        
+}
+parallel executeUCV07Exec
+
+echo "DSS To OLTP Execution.."
+def execDssToOlt= [:]
+def dssToOltOrgs="${params.PlanOrg}"
+def dssToOltenvironment="${params.Env}"
+ echo "Changes are from ${params.Env}"
+def dssToOltOrg=dssToOltOrgs.split(",") as String[]
+    println("Size of organizations")
+    println(dssToOltOrg.size())
+for (int i = 0; i < dssToOltOrg.size(); i++) {
+  def index = i
+def dssToOltOrgName=dssToOltOrg[i];
+  execDssToOlt["branch${i}"] = {
+    build job: 'S04-ExecuteDssToOltp', parameters: [
+      string(name: 'PlanOrg', value:"${dssToOltOrgName}"),
+string(name: 'Env', value:"${dssToOltenvironment}"),
+  string(name:'dummy', value: "${index}")]
+  }
+}
+parallel execDssToOlt
+
+echo "Claims Submission"
+def claimsSubmissionExec= [:]
+def claimsubmissionenv= "${params.Env}"
+for (int i = 0; i <1; i++) {
+def index = i
+claimsSubmissionExec["branch${i}"] = {
+    build job: 'S05-ClaimSubmission', parameters: [
+      string(name:'dummy', value: "${index}"),
+      string(name: 'Env', value:"${claimsubmissionenv}")]
+}
+}
+parallel claimsSubmissionExec
+
+echo "DeleteLogFile.."
+     echo "Changes are from ${params.PlanOrg}"
+     def DeleteLogFileOrgSelected="${params.PlanOrg}"
+     def DeleteLogFilePlanToOrg = [:]
+     DeleteLogFilePlanToOrg.put('CAREFIRST', "080,580,581")
+     DeleteLogFilePlanToOrg.put('BCBSNC', "810")
+     DeleteLogFilePlanToOrg.put('PREMERA', "430,939")
+ DeleteLogFilePlanToOrg.put('WELLMARK', "140,889")
+ DeleteLogFilePlanToOrg.put('BCBSNE', "260,760")
+     println(DeleteLogFilePlanToOrg.get('org1'))
+     def DeleteLogFileOrg=DeleteLogFileOrgSelected.split(",") as String[]
+     println("Size of organizations")
+     println(DeleteLogFileOrg.size())
+ def DeleteLogFileEnvironment="${params.Env}"
+      echo "Changes are from ${params.Env}"
+     int DeleteLogFileCounter=0;
+ for(int i=0;i<DeleteLogFileOrg.size();i++){
+         println("Organization is")
+         println(DeleteLogFileOrg[i])
+         println(DeleteLogFilePlanToOrg.get(DeleteLogFileOrg[i]));
+         def DeleteLogFilePlans=DeleteLogFilePlanToOrg.get(DeleteLogFileOrg[i]) as String[];
+         int DeleteLogFilePlansForOrg=DeleteLogFilePlans.count(',');
+         println("Count is: "+DeleteLogFilePlansForOrg)
+         def DeleteLogFilefinalPlans;
+         int DeleteLogFiletotalIterations=0;
+         if(DeleteLogFilePlansForOrg==0){
+            println("Count is zero")
+            println(DeleteLogFilePlanToOrg.get(DeleteLogFileOrg[i]))
+        }
+ else{
+            println("Count is more than zeroo")
+            DeleteLogFilefinalPlans=DeleteLogFilePlanToOrg.get(DeleteLogFileOrg[i]).split(',') as String[];
+            println(DeleteLogFilefinalPlans);
+            println(DeleteLogFilefinalPlans.size())
+            DeleteLogFiletotalIterations=DeleteLogFilefinalPlans.size()-1;
+        }
+          for(int j=0;j<=DeleteLogFiletotalIterations;j++){
+             def DeleteLogFileOrgName;
+             def DeleteLogFilePlanName;
+             DeleteLogFileCounter=DeleteLogFileCounter+1;
+             def index=DeleteLogFileCounter
+              if(DeleteLogFilePlansForOrg==0){
+              DeleteLogFileOrgName=DeleteLogFileOrg[i];
+              DeleteLogFilePlanName=DeleteLogFilePlanToOrg.get(DeleteLogFileOrg[i]);
+              }
+              else{
+              DeleteLogFileOrgName=DeleteLogFileOrg[i];
+             DeleteLogFilePlanName=DeleteLogFilefinalPlans[j];
+             println(DeleteLogFilefinalPlans[j])
+              }
+             sleep (10)
+             build job: 'S06-DeletionofConsoleLogs', parameters: [
+             string(name: 'PlanOrg', value:"${DeleteLogFileOrgName}"),
+             string(name: 'PlanName', value:"${DeleteLogFilePlanName}"),
+ string(name: 'Env', value:"${DeleteLogFileEnvironment}")]
+     }       
+ }
+
+echo "Set Voucher Cycle Date Execution.."
+def setVCDExec= [:]
+def setVCDExecOrgs="${params.PlanOrg}"
+def setVCDcycledate="${params.CycleDate}"
+def setVCDEnvironment="${params.Env}"
+ echo "Changes are from ${params.Env}"
+def setVCDExecOrg=setVCDExecOrgs.split(",") as String[]
+    println("Size of organizations")
+    println(setVCDExecOrg.size())
+for (int i = 0; i < setVCDExecOrg.size(); i++) {
+  def index = i
+def setVCDOrgName=setVCDExecOrg[i];
+  setVCDExec["branch${i}"] = {
+    build job: 'S07-SetVoucherCycleDate', parameters: [
+      string(name: 'PlanOrg', value:"${setVCDOrgName}"),
+string(name: 'CycleDate', value:"${setVCDcycledate}"),
+string(name: 'Env', value:"${setVCDEnvironment}"),
+  string(name:'dummy', value: "${index}")]
+  }
+}
+parallel setVCDExec
+
+echo "UCV07 To UCV23 Execution.."
+def executeUCV07toUCV23Exec= [:]
+    echo "Changes are from ${params.PlanOrg}"
+    def UCV07toUCV23orgSelected="${params.PlanOrg}"
+    def UCV07toUCV23planToOrg = [:]
+    UCV07toUCV23planToOrg.put('CAREFIRST', "080,580,581")
+    UCV07toUCV23planToOrg.put('BCBSNC', "810")
+    UCV07toUCV23planToOrg.put('PREMERA', "430,939")
+UCV07toUCV23planToOrg.put('WELLMARK', "140,889")
+UCV07toUCV23planToOrg.put('BCBSNE', "260,760")
+    println(UCV07toUCV23planToOrg.get('org1'))
+    def UCV07toUCV23org=UCV07toUCV23orgSelected.split(",") as String[]
+    println("Size of organizations")
+    println(UCV07toUCV23org.size())
+def UCV07toUCV23environment="${params.Env}"
+     echo "Changes are from ${params.Env}"
+def UCV07toUCV23batchcycledate="${params.BatchCyleDate}"
+     echo "Changes are from ${params.BatchCyleDate}"
+
+    int UCV07toUCV23counter=0;
+for(int i=0;i<UCV07toUCV23org.size();i++){
+        println("Organization is")
+        println(UCV07toUCV23org[i])
+        println(UCV07toUCV23planToOrg.get(UCV07toUCV23org[i]));
+        def UCV07toUCV23plans=UCV07toUCV23planToOrg.get(UCV07toUCV23org[i]) as String[];
+        int UCV07toUCV23plansForOrg=UCV07toUCV23plans.count(',');
+        println("Count is: "+UCV07toUCV23plansForOrg)
+        def UCV07toUCV23finalPlans;
+        int UCV07toUCV23totalIterations=0;
+        if(UCV07toUCV23plansForOrg==0){
+           println("Count is zero")
+           println(UCV07toUCV23planToOrg.get(UCV07toUCV23org[i]))
+       }
+else{
+           println("Count is more than zeroo")
+           UCV07toUCV23finalPlans=UCV07toUCV23planToOrg.get(UCV07toUCV23org[i]).split(',') as String[];
+           println(UCV07toUCV23finalPlans);
+           println(UCV07toUCV23finalPlans.size())
+           UCV07toUCV23totalIterations=UCV07toUCV23finalPlans.size()-1;
+       }
+         for(int j=0;j<=UCV07toUCV23totalIterations;j++){
+            def UCV07toUCV23pavOrgName;
+            def UCV07toUCV23pavPlanName;
+            UCV07toUCV23counter=UCV07toUCV23counter+1;
+            def index=UCV07toUCV23counter
+             if(UCV07toUCV23plansForOrg==0){
+             UCV07toUCV23pavOrgName=UCV07toUCV23org[i];
+             UCV07toUCV23pavPlanName=UCV07toUCV23planToOrg.get(UCV07toUCV23org[i]);
+             }
+             else{
+             UCV07toUCV23pavOrgName=UCV07toUCV23org[i];
+             UCV07toUCV23pavPlanName=UCV07toUCV23finalPlans[j];
+            println(UCV07toUCV23finalPlans[j])
+             }
+            executeUCV07toUCV23Exec["branch${UCV07toUCV23counter}"] = {
+            sleep (10)
+            build job: 'S08-ExecuteVoucherProcessUCV07toUCV23', parameters: [
+            string(name: 'PlanOrg', value:"${UCV07toUCV23pavOrgName}"),
+            string(name: 'PlanName', value:"${UCV07toUCV23pavPlanName}"),
+string(name: 'Env', value:"${UCV07toUCV23environment}"),
+string(name: 'BatchCyleDate', value:"${UCV07toUCV23batchcycledate}"),
+            string(name:'dummy', value: "${index}")]
+        }
+    }        
+}
+parallel executeUCV07toUCV23Exec
+
+echo "PaymentDownload.."
+    echo "Changes are from ${params.PlanOrg}"
+    def PaymentDownloadOrgSelected="${params.PlanOrg}"
+    def PaymentDownloadPlanToOrg = [:]
+    PaymentDownloadPlanToOrg.put('CAREFIRST', "080,580,581")
+    PaymentDownloadPlanToOrg.put('BCBSNC', "810")
+    PaymentDownloadPlanToOrg.put('PREMERA', "430,939")
+PaymentDownloadPlanToOrg.put('WELLMARK', "140,889")
+PaymentDownloadPlanToOrg.put('BCBSNE', "260,760")
+    println(PaymentDownloadPlanToOrg.get('org1'))
+    def PaymentDownloadOrg=PaymentDownloadOrgSelected.split(",") as String[]
+    println("Size of organizations")
+    println(PaymentDownloadOrg.size())
+def PaymentDownloadEnvironment="${params.Env}"
+     echo "Changes are from ${params.Env}"
+    int PaymentDownloadLoadCounter=0;
+for(int i=0;i<PaymentDownloadOrg.size();i++){
+        println("Organization is")
+        println(PaymentDownloadOrg[i])
+        println(PaymentDownloadPlanToOrg.get(PaymentDownloadOrg[i]));
+        def PaymentDownloadLoadPlans=PaymentDownloadPlanToOrg.get(PaymentDownloadOrg[i]) as String[];
+        int PaymentDownloadPlansForOrg=PaymentDownloadLoadPlans.count(',');
+        println("Count is: "+PaymentDownloadPlansForOrg)
+        def PaymentDownloadfinalPlans;
+        int PaymentDownloadLoadtotalIterations=0;
+        if(PaymentDownloadPlansForOrg==0){
+           println("Count is zero")
+           println(PaymentDownloadPlanToOrg.get(PaymentDownloadOrg[i]))
+       }
+else{
+           println("Count is more than zeroo")
+           PaymentDownloadfinalPlans=PaymentDownloadPlanToOrg.get(PaymentDownloadOrg[i]).split(',') as String[];
+           println(PaymentDownloadfinalPlans);
+           println(PaymentDownloadfinalPlans.size())
+           PaymentDownloadLoadtotalIterations=PaymentDownloadfinalPlans.size()-1;
+       }
+         for(int j=0;j<=PaymentDownloadLoadtotalIterations;j++){
+            def PaymentDownloadOrgName;
+            def PaymentDownloadPlanName;
+            PaymentDownloadLoadCounter=PaymentDownloadLoadCounter+1;
+            def index=PaymentDownloadLoadCounter
+             if(PaymentDownloadPlansForOrg==0){
+             PaymentDownloadOrgName=PaymentDownloadOrg[i];
+             PaymentDownloadPlanName=PaymentDownloadPlanToOrg.get(PaymentDownloadOrg[i]);
+             }
+             else{
+             PaymentDownloadOrgName=PaymentDownloadOrg[i];
+            PaymentDownloadPlanName=PaymentDownloadfinalPlans[j];
+            println(PaymentDownloadfinalPlans[j])
+             }
+            sleep (10)
+            build job: 'S08.1-PaymentFileDonwload', parameters: [
+            string(name: 'PlanOrg', value:"${PaymentDownloadOrgName}"),
+            
+            string(name: 'PlanName', value:"${PaymentDownloadPlanName}"),
+string(name: 'Env', value:"${PaymentDownloadEnvironment}")]
+    }       
+}
+
+echo "PaymentFileCompare.."
+echo "Changes are from ${params.PlanOrg}"
+def PaymentFileCompareOrgSelected="${params.PlanOrg}"
+def PaymentFileCompareEnvironment="${params.Env}"
+echo "Changes are from ${params.Env}"         
+build job: 'S08.2-ValidationOfPaymentFiles', parameters: [
+string(name: 'PlanOrg', value:"${PaymentFileCompareOrgSelected}"),
+string(name: 'Env', value:"${PaymentFileCompareEnvironment}")]
+
+echo "Execute Provider Summary Execution.."
+def executePS= [:]
+    echo "Changes are from ${params.PlanOrg}"
+    def PSorgSelected="${params.PlanOrg}"
+    def PSplanToOrg = [:]
+    PSplanToOrg.put('CAREFIRST', "080,580,581")
+    PSplanToOrg.put('BCBSNC', "810")
+    PSplanToOrg.put('PREMERA', "430,939")
+PSplanToOrg.put('WELLMARK', "140,889")
+PSplanToOrg.put('BCBSNE', "260,760")
+    println(PSplanToOrg.get('org1'))
+    def PSorg=PSorgSelected.split(",") as String[]
+    println("Size of organizations")
+    println(PSorg.size())
+def PSenvironment="${params.Env}"
+     echo "Changes are from ${params.Env}"
+def PSbatchcycledate="${params.BatchCyleDate}"
+     echo "Changes are from ${params.BatchCyleDate}"
+
+    int PScounter=0;
+for(int i=0;i<PSorg.size();i++){
+        println("Organization is")
+        println(PSorg[i])
+        println(PSplanToOrg.get(PSorg[i]));
+        def PSplans=PSplanToOrg.get(PSorg[i]) as String[];
+        int PSplansForOrg=PSplans.count(',');
+        println("Count is: "+PSplansForOrg)
+        def PSfinalPlans;
+        int PStotalIterations=0;
+        if(PSplansForOrg==0){
+           println("Count is zero")
+           println(PSplanToOrg.get(PSorg[i]))
+       }
+else{
+           println("Count is more than zeroo")
+           PSfinalPlans=PSplanToOrg.get(PSorg[i]).split(',') as String[];
+           println(PSfinalPlans);
+           println(PSfinalPlans.size())
+           PStotalIterations=PSfinalPlans.size()-1;
+       }
+         for(int j=0;j<=PStotalIterations;j++){
+            def PSpavOrgName;
+            def PSpavPlanName;
+            PScounter=PScounter+1;
+            def index=PScounter
+             if(PSplansForOrg==0){
+             PSpavOrgName=PSorg[i];
+             PSpavPlanName=PSplanToOrg.get(PSorg[i]);
+             }
+             else{
+             PSpavOrgName=PSorg[i];
+            PSpavPlanName=PSfinalPlans[j];
+            println(PSfinalPlans[j])
+             }
+            executePS["branch${PScounter}"] = {
+            sleep (10)
+            build job: 'S09-ExecuteProviderSummary', parameters: [
+            string(name: 'PlanOrg', value:"${PSpavOrgName}"),
+            string(name: 'PlanName', value:"${PSpavPlanName}"),
+string(name: 'Env', value:"${PSenvironment}"),
+string(name: 'BatchCyleDate', value:"${PSbatchcycledate}"),
+            string(name:'dummy', value: "${index}")]
+        }
+    }        
+}
+parallel executePS
+
+echo "Execute Provider Replication.."
+def EPRExec= [:]
+def EPRExecOrgs="${params.PlanOrg}"
+def EPRbatchcycledate="${params.BatchCyleDate}"
+def EPREnvironment="${params.Env}"
+ echo "Changes are from ${params.Env}"
+def EPRExecOrg=EPRExecOrgs.split(",") as String[]
+    println("Size of organizations")
+    println(EPRExecOrg.size())
+for (int i = 0; i < EPRExecOrg.size(); i++) {
+  def index = i
+def EPROrgName=EPRExecOrg[i];
+  EPRExec["branch${i}"] = {
+    build job: 'S10-ExecuteProviderReplication', parameters: [
+      string(name: 'PlanOrg', value:"${EPROrgName}"),
+string(name: 'BatchCyleDate', value:"${EPRbatchcycledate}"),
+string(name: 'Env', value:"${EPREnvironment}"),
+  string(name:'dummy', value: "${index}")]
+  }
+}
+parallel EPRExec
+
+echo "PavtestingXrefload.."
+    echo "Changes are from ${params.PlanOrg}"
+    def PavtestingXrefLoadOrgSelected="${params.PlanOrg}"
+    def PavtestingXrefLoadPlanToOrg = [:]
+    PavtestingXrefLoadPlanToOrg.put('CAREFIRST', "080,580,581")
+    PavtestingXrefLoadPlanToOrg.put('BCBSNC', "810")
+    PavtestingXrefLoadPlanToOrg.put('PREMERA', "430,939")
+PavtestingXrefLoadPlanToOrg.put('WELLMARK', "140,889")
+PavtestingXrefLoadPlanToOrg.put('BCBSNE', "260,760")
+    println(PavtestingXrefLoadPlanToOrg.get('org1'))
+    def PavtestingXrefLoadOrg=PavtestingXrefLoadOrgSelected.split(",") as String[]
+    println("Size of organizations")
+    println(PavtestingXrefLoadOrg.size())
+def PavtestingXrefLoadEnvironment="${params.Env}"
+     echo "Changes are from ${params.Env}"
+def PavtestXrefLoadbatchcycledate="${params.BatchCyleDate}"
+     echo "Changes are from ${params.BatchCyleDate}"
+    int PavtestXrefLoadCounter=0;
+for(int i=0;i<PavtestingXrefLoadOrg.size();i++){
+        println("Organization is")
+        println(PavtestingXrefLoadOrg[i])
+        println(PavtestingXrefLoadPlanToOrg.get(PavtestingXrefLoadOrg[i]));
+        def PavtestXrefLoadPlans=PavtestingXrefLoadPlanToOrg.get(PavtestingXrefLoadOrg[i]) as String[];
+        int PavtestingXrefLoadPlansForOrg=PavtestXrefLoadPlans.count(',');
+        println("Count is: "+PavtestingXrefLoadPlansForOrg)
+        def PavtestingXrefLoadfinalPlans;
+        int PavtestXrefLoadtotalIterations=0;
+        if(PavtestingXrefLoadPlansForOrg==0){
+           println("Count is zero")
+           println(PavtestingXrefLoadPlanToOrg.get(PavtestingXrefLoadOrg[i]))
+       }
+else{
+           println("Count is more than zeroo")
+           PavtestingXrefLoadfinalPlans=PavtestingXrefLoadPlanToOrg.get(PavtestingXrefLoadOrg[i]).split(',') as String[];
+           println(PavtestingXrefLoadfinalPlans);
+           println(PavtestingXrefLoadfinalPlans.size())
+           PavtestXrefLoadtotalIterations=PavtestingXrefLoadfinalPlans.size()-1;
+       }
+         for(int j=0;j<=PavtestXrefLoadtotalIterations;j++){
+            def PavtestingXrefLoadOrgName;
+            def PavtestingXrefLoadPlanName;
+            PavtestXrefLoadCounter=PavtestXrefLoadCounter+1;
+            def index=PavtestXrefLoadCounter
+             if(PavtestingXrefLoadPlansForOrg==0){
+             PavtestingXrefLoadOrgName=PavtestingXrefLoadOrg[i];
+             PavtestingXrefLoadPlanName=PavtestingXrefLoadPlanToOrg.get(PavtestingXrefLoadOrg[i]);
+             }
+             else{
+             PavtestingXrefLoadOrgName=PavtestingXrefLoadOrg[i];
+            PavtestingXrefLoadPlanName=PavtestingXrefLoadfinalPlans[j];
+            println(PavtestingXrefLoadfinalPlans[j])
+             }
+            sleep (10)
+            build job: 'S11-PavtestingXref_load', parameters: [
+            string(name: 'PlanOrg', value:"${PavtestingXrefLoadOrgName}"),
+            
+            string(name: 'PlanName', value:"${PavtestingXrefLoadPlanName}"),
+string(name: 'Env', value:"${PavtestingXrefLoadEnvironment}"),
+string(name: 'BatchCyleDate', value:"${PavtestXrefLoadbatchcycledate}")]
+    }       
+}
+echo "ExecutePavUCV24toUCV62.."
+def executeUCV24toUCV62= [:]
+    echo "Changes are from ${params.PlanOrg}"
+    def UCV24toUCV62orgSelected="${params.PlanOrg}"
+    def UCV24toUCV62planToOrg = [:]
+    UCV24toUCV62planToOrg.put('CAREFIRST', "080,580,581")
+    UCV24toUCV62planToOrg.put('BCBSNC', "810")
+    UCV24toUCV62planToOrg.put('PREMERA', "430,939")
+UCV24toUCV62planToOrg.put('WELLMARK', "140,889")
+UCV24toUCV62planToOrg.put('BCBSNE', "260,760")
+    println(UCV24toUCV62planToOrg.get('org1'))
+    def UCV24toUCV62org=UCV24toUCV62orgSelected.split(",") as String[]
+    println("Size of organizations")
+    println(UCV24toUCV62org.size())
+def UCV24toUCV62environment="${params.Env}"
+     echo "Changes are from ${params.Env}"
+def UCV24toUCV62batchcycledate="${params.BatchCyleDate}"
+     echo "Changes are from ${params.BatchCyleDate}"
+    int UCV24toUCV62counter=0;
+for(int i=0;i<UCV24toUCV62org.size();i++){
+        println("Organization is")
+        println(UCV24toUCV62org[i])
+        println(UCV24toUCV62planToOrg.get(UCV24toUCV62org[i]));
+        def UCV24toUCV62plans=UCV24toUCV62planToOrg.get(UCV24toUCV62org[i]) as String[];
+        int UCV24toUCV62plansForOrg=UCV24toUCV62plans.count(',');
+        println("Count is: "+UCV24toUCV62plansForOrg)
+        def UCV24toUCV62finalPlans;
+        int UCV24toUCV62totalIterations=0;
+        if(UCV24toUCV62plansForOrg==0){
+           println("Count is zero")
+           println(UCV24toUCV62planToOrg.get(UCV24toUCV62org[i]))
+       }
+else{
+           println("Count is more than zeroo")
+           UCV24toUCV62finalPlans=UCV24toUCV62planToOrg.get(UCV24toUCV62org[i]).split(',') as String[];
+           println(UCV24toUCV62finalPlans);
+           println(UCV24toUCV62finalPlans.size())
+           UCV24toUCV62totalIterations=UCV24toUCV62finalPlans.size()-1;
+       }
+         for(int j=0;j<=UCV24toUCV62totalIterations;j++){
+            def UCV24toUCV62pavOrgName;
+            def UCV24toUCV62pavPlanName;
+            UCV24toUCV62counter=UCV24toUCV62counter+1;
+            def index=UCV24toUCV62counter
+             if(UCV24toUCV62plansForOrg==0){
+             UCV24toUCV62pavOrgName=UCV24toUCV62org[i];
+             UCV24toUCV62pavPlanName=UCV24toUCV62planToOrg.get(UCV24toUCV62org[i]);
+             }
+             else{
+             UCV24toUCV62pavOrgName=UCV24toUCV62org[i];
+            UCV24toUCV62pavPlanName=UCV24toUCV62finalPlans[j];
+            println(UCV24toUCV62finalPlans[j])
+             }
+            executeUCV24toUCV62["branch${UCV24toUCV62counter}"] = {
+            sleep (10)
+            build job: 'S12-ExecutePavUCV24toUCV62', parameters: [
+            string(name: 'PlanOrg', value:"${UCV24toUCV62pavOrgName}"),
+            string(name: 'PlanName', value:"${UCV24toUCV62pavPlanName}"),
+string(name: 'Env', value:"${UCV24toUCV62environment}"),
+string(name: 'BatchCyleDate', value:"${UCV24toUCV62batchcycledate}"),
+            string(name:'dummy', value: "${index}")]
+        }
+    }        
+}
+parallel executeUCV24toUCV62
+
+echo "Execute PAV Replication"
+def PAVRExec= [:]
+def PAVRExecOrgs="${params.PlanOrg}"
+def PAVRbatchcycledate="${params.BatchCyleDate}"
+def PAVREnvironment="${params.Env}"
+ echo "Changes are from ${params.Env}"
+def PAVRExecOrg=PAVRExecOrgs.split(",") as String[]
+    println("Size of organizations")
+    println(PAVRExecOrg.size())
+for (int i = 0; i < PAVRExecOrg.size(); i++) {
+  def index = i
+def PAVROrgName=PAVRExecOrg[i];
+
+    build job: 'S13-ExecutePAVReplication', parameters: [
+      string(name: 'PlanOrg', value:"${PAVROrgName}"),
+string(name: 'BatchCyleDate', value:"${PAVRbatchcycledate}"),
+string(name: 'Env', value:"${PAVREnvironment}"),
+  string(name:'dummy', value: "${index}")]
+
+}
+
+echo "Execute PavReportTrigger"
+def PAVREPExec= [:]
+def PAVREPExecOrgs="${params.PlanOrg}"
+def PAVREPbatchcycledate="${params.BatchCyleDate}"
+def PAVREPEnvironment="${params.Env}"
+ echo "Changes are from ${params.Env}"
+def PAVREPExecOrg=PAVREPExecOrgs.split(",") as String[]
+    println("Size of organizations")
+    println(PAVREPExecOrg.size())
+for (int i = 0; i < PAVREPExecOrg.size(); i++) {
+  def index = i
+def PAVREPOrgName=PAVREPExecOrg[i];
+  PAVREPExec["branch${i}"] = {
+    build job: 'S14-PavReportTrigger', parameters: [
+      string(name: 'PlanOrg', value:"${PAVREPOrgName}"),
+string(name: 'BatchCyleDate', value:"${PAVREPbatchcycledate}"),
+string(name: 'Env', value:"${PAVREPEnvironment}"),
+  string(name:'dummy', value: "${index}")]
+  }
+}
+parallel PAVREPExec
+
+}
