@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GeneralLedgerTransaction xmlns="http://www.carefirst.com/GeneralLedgerTransactionCommonV1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pm="http://www.carefirst.com/GeneralLedgerTransactionPREMERAV1" xsi:schemaLocation="http://www.carefirst.com/GeneralLedgerTransactionCommonV1 GeneralLedgerTransactionCommonV1.xsd http://www.carefirst.com/GeneralLedgerTransactionPREMERAV1 GeneralLedgerTransactionPREMERAV1.xsd">
+    <Header>
+        <PlanOrganization>PREMERA</PlanOrganization>
+        <ActivityTimestamp>2020-03-12T00:14:12.635-04:00</ActivityTimestamp>
+        <LineOfBusiness>FEP</LineOfBusiness>
+    </Header>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <EntityCode>100</EntityCode>
+        <AccountNumber>51000</AccountNumber>
+        <CostCenter>00000</CostCenter>
+        <CostCenterPool>0000</CostCenterPool>
+        <Site>0000</Site>
+        <Risk>000</Risk>
+        <Product>000</Product>
+        <Market>000</Market>
+        <Operations>000</Operations>
+        <Project>0000</Project>
+        <CjaCode>1997</CjaCode>
+        <Future>0000</Future>
+        <Source>FDDE</Source>
+        <CycleDate>2020-03-11</CycleDate>
+        <GLAmount>1316784.94</GLAmount>
+        <GLDescription>VCHR 1A-FEP PLAN 430</GLDescription>
+        <ReversalFlag/>
+        <GLSource/>
+        <GLCategory/>
+        <CustomElements>
+            <CustomElement name="RunGroup">FEPCareFirst</CustomElement>
+            <CustomElement name="SequenceNumber1">1</CustomElement>
+            <CustomElement name="OldCompany">9200</CustomElement>
+            <CustomElement name="OldAccountNumber">51000</CustomElement>
+            <CustomElement name="SourceCode">FE</CustomElement>
+            <CustomElement name="ClaimPaidDate">2020-03-11</CustomElement>
+            <CustomElement name="Description">FEP Claims</CustomElement>
+            <CustomElement name="CurrencyCode">USD</CustomElement>
+            <CustomElement name="TransactionAmount">+01316784.94</CustomElement>
+            <CustomElement name="System">GL</CustomElement>
+            <CustomElement name="PostingDate">2020-03-11</CustomElement>
+            <CustomElement name="EffectDate">2020-03-11</CustomElement>
+            <CustomElement name="Reference"/>
+            <CustomElement name="UnitsAmount"/>
+            <CustomElement name="BaseAmount"/>
+            <CustomElement name="BaseRate"/>
+            <CustomElement name="ProgramCode"/>
+            <CustomElement name="AutoReverse"/>
+            <CustomElement name="Activity"/>
+            <CustomElement name="AccountCategory"/>
+            <CustomElement name="DocumentNumber"/>
+            <CustomElement name="ToBaseAmount"/>
+            <CustomElement name="JournalBookNumber"/>
+            <CustomElement name="Product">PPO</CustomElement>
+            <CustomElement name="Segment">FEP</CustomElement>
+            <CustomElement name="AttributeValue3"/>
+            <CustomElement name="SequenceNumber2"/>
+            <CustomElement name="NegativeAdjustment"/>
+            <CustomElement name="UserAnalysis"/>
+            <CustomElement name="ReportCurrencyOneAmount"/>
+            <CustomElement name="ExchangeRate1"/>
+            <CustomElement name="Decimal1"/>
+            <CustomElement name="ReportCurrencyTwoAmount"/>
+            <CustomElement name="ExchangeRate2"/>
+            <CustomElement name="Decimal2"/>
+        </CustomElements>
+        <pm:LOB>330</pm:LOB>
+        <pm:State>WA</pm:State>
+        <pm:LOC>MED</pm:LOC>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <EntityCode>100</EntityCode>
+        <AccountNumber>41000</AccountNumber>
+        <CostCenter>00000</CostCenter>
+        <CostCenterPool>0000</CostCenterPool>
+        <Site>0000</Site>
+        <Risk>000</Risk>
+        <Product>000</Product>
+        <Market>000</Market>
+        <Operations>000</Operations>
+        <Project>0000</Project>
+        <CjaCode>1997</CjaCode>
+        <Future>0000</Future>
+        <Source>FDDE</Source>
+        <CycleDate>2020-03-11</CycleDate>
+        <GLAmount>-1316784.94</GLAmount>
+        <GLDescription>VCHR 1A-FEP PLAN 430</GLDescription>
+        <ReversalFlag/>
+        <GLSource/>
+        <GLCategory/>
+        <CustomElements>
+            <CustomElement name="RunGroup">FEPCareFirst</CustomElement>
+            <CustomElement name="SequenceNumber1">2</CustomElement>
+            <CustomElement name="OldCompany">9200</CustomElement>
+            <CustomElement name="OldAccountNumber">41000</CustomElement>
+            <CustomElement name="SourceCode">FE</CustomElement>
+            <CustomElement name="ClaimPaidDate">2020-03-11</CustomElement>
+            <CustomElement name="Description">FEP Claims</CustomElement>
+            <CustomElement name="CurrencyCode">USD</CustomElement>
+            <CustomElement name="TransactionAmount">-01316784.94</CustomElement>
+            <CustomElement name="System">GL</CustomElement>
+            <CustomElement name="PostingDate">2020-03-11</CustomElement>
+            <CustomElement name="EffectDate">2020-03-11</CustomElement>
+            <CustomElement name="Reference"/>
+            <CustomElement name="UnitsAmount"/>
+            <CustomElement name="BaseAmount"/>
+            <CustomElement name="BaseRate"/>
+            <CustomElement name="ProgramCode"/>
+            <CustomElement name="AutoReverse"/>
+            <CustomElement name="Activity"/>
+            <CustomElement name="AccountCategory"/>
+            <CustomElement name="DocumentNumber"/>
+            <CustomElement name="ToBaseAmount"/>
+            <CustomElement name="JournalBookNumber"/>
+            <CustomElement name="Product">PPO</CustomElement>
+            <CustomElement name="Segment">FEP</CustomElement>
+            <CustomElement name="AttributeValue3"/>
+            <CustomElement name="SequenceNumber2"/>
+            <CustomElement name="NegativeAdjustment"/>
+            <CustomElement name="UserAnalysis"/>
+            <CustomElement name="ReportCurrencyOneAmount"/>
+            <CustomElement name="ExchangeRate1"/>
+            <CustomElement name="Decimal1"/>
+            <CustomElement name="ReportCurrencyTwoAmount"/>
+            <CustomElement name="ExchangeRate2"/>
+            <CustomElement name="Decimal2"/>
+        </CustomElements>
+        <pm:LOB>330</pm:LOB>
+        <pm:State>WA</pm:State>
+        <pm:LOC>MED</pm:LOC>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <EntityCode>100</EntityCode>
+        <AccountNumber>41000</AccountNumber>
+        <CostCenter>00000</CostCenter>
+        <CostCenterPool>0000</CostCenterPool>
+        <Site>0000</Site>
+        <Risk>000</Risk>
+        <Product>000</Product>
+        <Market>000</Market>
+        <Operations>000</Operations>
+        <Project>0000</Project>
+        <CjaCode>1997</CjaCode>
+        <Future>0000</Future>
+        <Source>FDDE</Source>
+        <CycleDate>2020-03-11</CycleDate>
+        <GLAmount>21678.25</GLAmount>
+        <GLDescription>VCHR 1A-FEP PLAN 430</GLDescription>
+        <ReversalFlag/>
+        <GLSource/>
+        <GLCategory/>
+        <CustomElements>
+            <CustomElement name="RunGroup">FEPCareFirst</CustomElement>
+            <CustomElement name="SequenceNumber1">3</CustomElement>
+            <CustomElement name="OldCompany">9200</CustomElement>
+            <CustomElement name="OldAccountNumber">41000</CustomElement>
+            <CustomElement name="SourceCode">FE</CustomElement>
+            <CustomElement name="ClaimPaidDate">2020-03-11</CustomElement>
+            <CustomElement name="Description">FEP Claims</CustomElement>
+            <CustomElement name="CurrencyCode">USD</CustomElement>
+            <CustomElement name="TransactionAmount">+00021678.25</CustomElement>
+            <CustomElement name="System">GL</CustomElement>
+            <CustomElement name="PostingDate">2020-03-11</CustomElement>
+            <CustomElement name="EffectDate">2020-03-11</CustomElement>
+            <CustomElement name="Reference"/>
+            <CustomElement name="UnitsAmount"/>
+            <CustomElement name="BaseAmount"/>
+            <CustomElement name="BaseRate"/>
+            <CustomElement name="ProgramCode"/>
+            <CustomElement name="AutoReverse"/>
+            <CustomElement name="Activity"/>
+            <CustomElement name="AccountCategory"/>
+            <CustomElement name="DocumentNumber"/>
+            <CustomElement name="ToBaseAmount"/>
+            <CustomElement name="JournalBookNumber"/>
+            <CustomElement name="Product">PPO</CustomElement>
+            <CustomElement name="Segment">FEP</CustomElement>
+            <CustomElement name="AttributeValue3"/>
+            <CustomElement name="SequenceNumber2"/>
+            <CustomElement name="NegativeAdjustment"/>
+            <CustomElement name="UserAnalysis"/>
+            <CustomElement name="ReportCurrencyOneAmount"/>
+            <CustomElement name="ExchangeRate1"/>
+            <CustomElement name="Decimal1"/>
+            <CustomElement name="ReportCurrencyTwoAmount"/>
+            <CustomElement name="ExchangeRate2"/>
+            <CustomElement name="Decimal2"/>
+        </CustomElements>
+        <pm:LOB>330</pm:LOB>
+        <pm:State>WA</pm:State>
+        <pm:LOC>MED</pm:LOC>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <EntityCode>100</EntityCode>
+        <AccountNumber>51000</AccountNumber>
+        <CostCenter>00000</CostCenter>
+        <CostCenterPool>0000</CostCenterPool>
+        <Site>0000</Site>
+        <Risk>000</Risk>
+        <Product>000</Product>
+        <Market>000</Market>
+        <Operations>000</Operations>
+        <Project>0000</Project>
+        <CjaCode>1997</CjaCode>
+        <Future>0000</Future>
+        <Source>FDDE</Source>
+        <CycleDate>2020-03-11</CycleDate>
+        <GLAmount>-21678.25</GLAmount>
+        <GLDescription>VCHR 1A-FEP PLAN 430</GLDescription>
+        <ReversalFlag/>
+        <GLSource/>
+        <GLCategory/>
+        <CustomElements>
+            <CustomElement name="RunGroup">FEPCareFirst</CustomElement>
+            <CustomElement name="SequenceNumber1">4</CustomElement>
+            <CustomElement name="OldCompany">9200</CustomElement>
+            <CustomElement name="OldAccountNumber">51000</CustomElement>
+            <CustomElement name="SourceCode">FE</CustomElement>
+            <CustomElement name="ClaimPaidDate">2020-03-11</CustomElement>
+            <CustomElement name="Description">FEP Claims</CustomElement>
+            <CustomElement name="CurrencyCode">USD</CustomElement>
+            <CustomElement name="TransactionAmount">-00021678.25</CustomElement>
+            <CustomElement name="System">GL</CustomElement>
+            <CustomElement name="PostingDate">2020-03-11</CustomElement>
+            <CustomElement name="EffectDate">2020-03-11</CustomElement>
+            <CustomElement name="Reference"/>
+            <CustomElement name="UnitsAmount"/>
+            <CustomElement name="BaseAmount"/>
+            <CustomElement name="BaseRate"/>
+            <CustomElement name="ProgramCode"/>
+            <CustomElement name="AutoReverse"/>
+            <CustomElement name="Activity"/>
+            <CustomElement name="AccountCategory"/>
+            <CustomElement name="DocumentNumber"/>
+            <CustomElement name="ToBaseAmount"/>
+            <CustomElement name="JournalBookNumber"/>
+            <CustomElement name="Product">PPO</CustomElement>
+            <CustomElement name="Segment">FEP</CustomElement>
+            <CustomElement name="AttributeValue3"/>
+            <CustomElement name="SequenceNumber2"/>
+            <CustomElement name="NegativeAdjustment"/>
+            <CustomElement name="UserAnalysis"/>
+            <CustomElement name="ReportCurrencyOneAmount"/>
+            <CustomElement name="ExchangeRate1"/>
+            <CustomElement name="Decimal1"/>
+            <CustomElement name="ReportCurrencyTwoAmount"/>
+            <CustomElement name="ExchangeRate2"/>
+            <CustomElement name="Decimal2"/>
+        </CustomElements>
+        <pm:LOB>330</pm:LOB>
+        <pm:State>WA</pm:State>
+        <pm:LOC>MED</pm:LOC>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <EntityCode>100</EntityCode>
+        <AccountNumber>41000</AccountNumber>
+        <CostCenter>00000</CostCenter>
+        <CostCenterPool>0000</CostCenterPool>
+        <Site>0000</Site>
+        <Risk>000</Risk>
+        <Product>000</Product>
+        <Market>000</Market>
+        <Operations>000</Operations>
+        <Project>0000</Project>
+        <CjaCode>1997</CjaCode>
+        <Future>0000</Future>
+        <Source>FDDE</Source>
+        <CycleDate>2020-03-11</CycleDate>
+        <GLAmount>1512.22</GLAmount>
+        <GLDescription>VCHR 1A-FEP PLAN 430</GLDescription>
+        <ReversalFlag/>
+        <GLSource/>
+        <GLCategory/>
+        <CustomElements>
+            <CustomElement name="RunGroup">FEPCareFirst</CustomElement>
+            <CustomElement name="SequenceNumber1">5</CustomElement>
+            <CustomElement name="OldCompany">9200</CustomElement>
+            <CustomElement name="OldAccountNumber">41000</CustomElement>
+            <CustomElement name="SourceCode">FE</CustomElement>
+            <CustomElement name="ClaimPaidDate">2020-03-11</CustomElement>
+            <CustomElement name="Description">FEP Claims</CustomElement>
+            <CustomElement name="CurrencyCode">USD</CustomElement>
+            <CustomElement name="TransactionAmount">+00001512.22</CustomElement>
+            <CustomElement name="System">GL</CustomElement>
+            <CustomElement name="PostingDate">2020-03-11</CustomElement>
+            <CustomElement name="EffectDate">2020-03-11</CustomElement>
+            <CustomElement name="Reference"/>
+            <CustomElement name="UnitsAmount"/>
+            <CustomElement name="BaseAmount"/>
+            <CustomElement name="BaseRate"/>
+            <CustomElement name="ProgramCode"/>
+            <CustomElement name="AutoReverse"/>
+            <CustomElement name="Activity"/>
+            <CustomElement name="AccountCategory"/>
+            <CustomElement name="DocumentNumber"/>
+            <CustomElement name="ToBaseAmount"/>
+            <CustomElement name="JournalBookNumber"/>
+            <CustomElement name="Product">PPO</CustomElement>
+            <CustomElement name="Segment">FEP</CustomElement>
+            <CustomElement name="AttributeValue3"/>
+            <CustomElement name="SequenceNumber2"/>
+            <CustomElement name="NegativeAdjustment"/>
+            <CustomElement name="UserAnalysis"/>
+            <CustomElement name="ReportCurrencyOneAmount"/>
+            <CustomElement name="ExchangeRate1"/>
+            <CustomElement name="Decimal1"/>
+            <CustomElement name="ReportCurrencyTwoAmount"/>
+            <CustomElement name="ExchangeRate2"/>
+            <CustomElement name="Decimal2"/>
+        </CustomElements>
+        <pm:LOB>330</pm:LOB>
+        <pm:State>WA</pm:State>
+        <pm:LOC>MED</pm:LOC>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <EntityCode>100</EntityCode>
+        <AccountNumber>51000</AccountNumber>
+        <CostCenter>00000</CostCenter>
+        <CostCenterPool>0000</CostCenterPool>
+        <Site>0000</Site>
+        <Risk>000</Risk>
+        <Product>000</Product>
+        <Market>000</Market>
+        <Operations>000</Operations>
+        <Project>0000</Project>
+        <CjaCode>1997</CjaCode>
+        <Future>0000</Future>
+        <Source>FDDE</Source>
+        <CycleDate>2020-03-11</CycleDate>
+        <GLAmount>-1512.22</GLAmount>
+        <GLDescription>VCHR 1A-FEP PLAN 430</GLDescription>
+        <ReversalFlag/>
+        <GLSource/>
+        <GLCategory/>
+        <CustomElements>
+            <CustomElement name="RunGroup">FEPCareFirst</CustomElement>
+            <CustomElement name="SequenceNumber1">6</CustomElement>
+            <CustomElement name="OldCompany">9200</CustomElement>
+            <CustomElement name="OldAccountNumber">51000</CustomElement>
+            <CustomElement name="SourceCode">FE</CustomElement>
+            <CustomElement name="ClaimPaidDate">2020-03-11</CustomElement>
+            <CustomElement name="Description">FEP Claims</CustomElement>
+            <CustomElement name="CurrencyCode">USD</CustomElement>
+            <CustomElement name="TransactionAmount">-00001512.22</CustomElement>
+            <CustomElement name="System">GL</CustomElement>
+            <CustomElement name="PostingDate">2020-03-11</CustomElement>
+            <CustomElement name="EffectDate">2020-03-11</CustomElement>
+            <CustomElement name="Reference"/>
+            <CustomElement name="UnitsAmount"/>
+            <CustomElement name="BaseAmount"/>
+            <CustomElement name="BaseRate"/>
+            <CustomElement name="ProgramCode"/>
+            <CustomElement name="AutoReverse"/>
+            <CustomElement name="Activity"/>
+            <CustomElement name="AccountCategory"/>
+            <CustomElement name="DocumentNumber"/>
+            <CustomElement name="ToBaseAmount"/>
+            <CustomElement name="JournalBookNumber"/>
+            <CustomElement name="Product">PPO</CustomElement>
+            <CustomElement name="Segment">FEP</CustomElement>
+            <CustomElement name="AttributeValue3"/>
+            <CustomElement name="SequenceNumber2"/>
+            <CustomElement name="NegativeAdjustment"/>
+            <CustomElement name="UserAnalysis"/>
+            <CustomElement name="ReportCurrencyOneAmount"/>
+            <CustomElement name="ExchangeRate1"/>
+            <CustomElement name="Decimal1"/>
+            <CustomElement name="ReportCurrencyTwoAmount"/>
+            <CustomElement name="ExchangeRate2"/>
+            <CustomElement name="Decimal2"/>
+        </CustomElements>
+        <pm:LOB>330</pm:LOB>
+        <pm:State>WA</pm:State>
+        <pm:LOC>MED</pm:LOC>
+    </Detail>
+    <Trailer>
+        <RecordCount>6</RecordCount>
+        <RecordTotal currency="dollars">0</RecordTotal>
+    </Trailer>
+</GeneralLedgerTransaction>

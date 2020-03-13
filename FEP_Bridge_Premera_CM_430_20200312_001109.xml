@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CashManagementTransaction xmlns="http://www.carefirst.com/CashManagementTransactionCommonV1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pm="http://www.carefirst.com/CashManagementTransactionPREMERAV1" xsi:schemaLocation="http://www.carefirst.com/CashManagementTransactionCommonV1 CashManagementTransactionCommonV1.xsd http://www.carefirst.com/CashManagementTransactionPREMERAV1 CashManagementTransactionPREMERAV1.xsd">
+    <Header>
+        <PlanOrganization>PREMERA</PlanOrganization>
+        <ActivityTimestamp>2020-03-12T00:11:09.266-04:00</ActivityTimestamp>
+        <LineOfBusiness>FEP</LineOfBusiness>
+    </Header>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84625U2325PM</Dcn>
+        <SubscriberId>R11408579</SubscriberId>
+        <TransactionId>46652225770</TransactionId>
+        <PayeeIdentifier>1801851258</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-1340</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-1340</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>430F309</CoderId>
+        <OcProcessedDate>2019-03-12</OcProcessedDate>
+        <TaxId>910565539</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F309</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84253U5807PM</Dcn>
+        <SubscriberId>R50009395</SubscriberId>
+        <TransactionId>45053112441</TransactionId>
+        <PayeeIdentifier>1164580700</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">0</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">0</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>430F203A</CoderId>
+        <OcProcessedDate>2019-02-25</OcProcessedDate>
+        <TaxId>910889551</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F203A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84601E0557PM</Dcn>
+        <SubscriberId>R50102885</SubscriberId>
+        <TransactionId>47425185404</TransactionId>
+        <PayeeIdentifier>1801851258</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-648.14</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-648.14</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>430F309</CoderId>
+        <OcProcessedDate>2019-04-04</OcProcessedDate>
+        <TaxId>910565539</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F309</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84648Q8636PM</Dcn>
+        <SubscriberId>R50102885</SubscriberId>
+        <TransactionId>43365816525</TransactionId>
+        <PayeeIdentifier>1801851258</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-648.14</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-648.14</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F309</CoderId>
+        <OcProcessedDate>2019-04-04</OcProcessedDate>
+        <TaxId>910565539</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F309</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84669L8663PM</Dcn>
+        <SubscriberId>R50112052</SubscriberId>
+        <TransactionId>40031150176</TransactionId>
+        <PayeeIdentifier>1801851258</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-1340</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-1340</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F324</CoderId>
+        <OcProcessedDate>2019-04-08</OcProcessedDate>
+        <TaxId>910565539</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F324</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>72122P1281PM</Dcn>
+        <SubscriberId>R50174291</SubscriberId>
+        <TransactionId>40116887344</TransactionId>
+        <PayeeIdentifier>1992701825</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-710.24</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-337.24</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <TaxId>520445374</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>72122S6200PM</Dcn>
+        <SubscriberId>R50174291</SubscriberId>
+        <TransactionId>43544183352</TransactionId>
+        <PayeeIdentifier>1992701825</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-710.24</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-337.24</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <TaxId>520445374</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>80312H5313PM</Dcn>
+        <SubscriberId>R50634735</SubscriberId>
+        <TransactionId>45434178416</TransactionId>
+        <PayeeIdentifier>R5063473501</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-15304.94</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-253.88</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>80322N0265PM</Dcn>
+        <SubscriberId>R50634735</SubscriberId>
+        <TransactionId>43080118051</TransactionId>
+        <PayeeIdentifier>R5063473502</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-15304.94</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-253.88</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>80322T0850PM</Dcn>
+        <SubscriberId>R50634735</SubscriberId>
+        <TransactionId>45667456117</TransactionId>
+        <PayeeIdentifier>R5063473503</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-15304.94</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-253.88</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>80352O2263PM</Dcn>
+        <SubscriberId>R50634735</SubscriberId>
+        <TransactionId>48432605446</TransactionId>
+        <PayeeIdentifier>R5063473504</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-15304.94</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-253.88</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>8452491652PM</Dcn>
+        <SubscriberId>R50942620</SubscriberId>
+        <TransactionId>42635674586</TransactionId>
+        <PayeeIdentifier>1700037801</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-506.58</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-506.58</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-04-03</OcProcessedDate>
+        <TaxId>352346161</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84544D2153PM</Dcn>
+        <SubscriberId>R50942620</SubscriberId>
+        <TransactionId>43137580785</TransactionId>
+        <PayeeIdentifier>1700037801</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-506.58</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-506.58</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-04-03</OcProcessedDate>
+        <TaxId>352346161</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84542P8048PM</Dcn>
+        <SubscriberId>R57700907</SubscriberId>
+        <TransactionId>45078303443</TransactionId>
+        <PayeeIdentifier>1306973235</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-433.37</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-433.37</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F004</CoderId>
+        <OcProcessedDate>2019-03-07</OcProcessedDate>
+        <TaxId>912065379</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84572Z2384PM</Dcn>
+        <SubscriberId>R57700907</SubscriberId>
+        <TransactionId>40756777560</TransactionId>
+        <PayeeIdentifier>1306973235</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-433.37</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-433.37</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F004</CoderId>
+        <OcProcessedDate>2019-03-07</OcProcessedDate>
+        <TaxId>912065379</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84320E2455PM</Dcn>
+        <SubscriberId>R58360173</SubscriberId>
+        <TransactionId>41283633370</TransactionId>
+        <PayeeIdentifier>1366556227</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-413.66</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-413.66</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-04-02</OcProcessedDate>
+        <TaxId>911352172</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F043A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84380E5631PM</Dcn>
+        <SubscriberId>R58360173</SubscriberId>
+        <TransactionId>48673353171</TransactionId>
+        <PayeeIdentifier>1366556227</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-413.66</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-413.66</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-04-02</OcProcessedDate>
+        <TaxId>911352172</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F043A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84304A6334PM</Dcn>
+        <SubscriberId>R58538992</SubscriberId>
+        <TransactionId>46506070223</TransactionId>
+        <PayeeIdentifier>1467961250</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-1336.94</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-1336.94</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F203A</CoderId>
+        <OcProcessedDate>2019-04-05</OcProcessedDate>
+        <TaxId>916000960</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F203A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84486L3554PM</Dcn>
+        <SubscriberId>R59037474</SubscriberId>
+        <TransactionId>41584186157</TransactionId>
+        <PayeeIdentifier>1841231461</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-1340</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-1340</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>430F324</CoderId>
+        <OcProcessedDate>2019-02-28</OcProcessedDate>
+        <TaxId>911352172</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F324</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84621W4344PM</Dcn>
+        <SubscriberId>R59253195</SubscriberId>
+        <TransactionId>46558142580</TransactionId>
+        <PayeeIdentifier>1376624981</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-340.28</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-340.28</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-02-22</OcProcessedDate>
+        <TaxId>910573108</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84614X3606PM</Dcn>
+        <SubscriberId>R59507620</SubscriberId>
+        <TransactionId>45410686383</TransactionId>
+        <PayeeIdentifier>1184844185</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-463.76</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-463.76</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-02-22</OcProcessedDate>
+        <TaxId>911557904</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>8462437207PM</Dcn>
+        <SubscriberId>R59507620</SubscriberId>
+        <TransactionId>48254002350</TransactionId>
+        <PayeeIdentifier>1184844185</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-463.76</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-463.76</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-02-22</OcProcessedDate>
+        <TaxId>911557904</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84605J5176PM</Dcn>
+        <SubscriberId>R59540486</SubscriberId>
+        <TransactionId>47054218216</TransactionId>
+        <PayeeIdentifier>1558333682</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-421.81</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-421.81</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-04-03</OcProcessedDate>
+        <TaxId>910712166</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F043A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84665W4626PM</Dcn>
+        <SubscriberId>R59540486</SubscriberId>
+        <TransactionId>41381757162</TransactionId>
+        <PayeeIdentifier>1558333682</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-421.81</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-421.81</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-04-03</OcProcessedDate>
+        <TaxId>910712166</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F043A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>8461661742PM</Dcn>
+        <SubscriberId>R59589459</SubscriberId>
+        <TransactionId>45676382203</TransactionId>
+        <PayeeIdentifier>1346250594</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-501.22</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-501.22</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>430F324</CoderId>
+        <OcProcessedDate>2019-03-08</OcProcessedDate>
+        <TaxId>910567732</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F324</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84656S2422PM</Dcn>
+        <SubscriberId>R59589459</SubscriberId>
+        <TransactionId>47587344551</TransactionId>
+        <PayeeIdentifier>1346250594</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-501.22</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-501.22</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F324</CoderId>
+        <OcProcessedDate>2019-03-08</OcProcessedDate>
+        <TaxId>910567732</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F324</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>18254F3831PM</Dcn>
+        <SubscriberId>R59635097</SubscriberId>
+        <TransactionId>43116781188</TransactionId>
+        <PayeeIdentifier>1447406699</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-549.67</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-549.67</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F369A</CoderId>
+        <OcProcessedDate>2019-03-07</OcProcessedDate>
+        <TaxId>383769889</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F369A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>18254L4243PM</Dcn>
+        <SubscriberId>R59635097</SubscriberId>
+        <TransactionId>48471883038</TransactionId>
+        <PayeeIdentifier>1447406699</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-549.67</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-549.67</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F369A</CoderId>
+        <OcProcessedDate>2019-03-07</OcProcessedDate>
+        <TaxId>383769889</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F369A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>8468344537PM</Dcn>
+        <SubscriberId>R59784729</SubscriberId>
+        <TransactionId>43236033346</TransactionId>
+        <PayeeIdentifier>1346250594</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">0</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">0</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>430F004</CoderId>
+        <OcProcessedDate>2019-03-04</OcProcessedDate>
+        <TaxId>910567732</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84404L7526PM</Dcn>
+        <SubscriberId>R59983005</SubscriberId>
+        <TransactionId>40384186457</TransactionId>
+        <PayeeIdentifier>1518912609</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">0</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">0</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F203A</CoderId>
+        <OcProcessedDate>2019-03-01</OcProcessedDate>
+        <TaxId>910565546</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F203A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84533S1366PM</Dcn>
+        <SubscriberId>R60196230</SubscriberId>
+        <TransactionId>46854741524</TransactionId>
+        <PayeeIdentifier>1184844185</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-593.12</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-593.12</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-04-05</OcProcessedDate>
+        <TaxId>911557904</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>8456216203PM</Dcn>
+        <SubscriberId>R60245357</SubscriberId>
+        <TransactionId>48782723537</TransactionId>
+        <PayeeIdentifier>1518912609</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-690.91</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-690.91</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>430F369A</CoderId>
+        <OcProcessedDate>2019-03-07</OcProcessedDate>
+        <TaxId>910565546</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F369A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>42512Y8083PM</Dcn>
+        <SubscriberId>R60334028</SubscriberId>
+        <TransactionId>42228055648</TransactionId>
+        <PayeeIdentifier>1770589533</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-482.65</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-482.65</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <TaxId>520591484</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>42532A5876PM</Dcn>
+        <SubscriberId>R60334028</SubscriberId>
+        <TransactionId>48356062452</TransactionId>
+        <PayeeIdentifier>1770589533</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-482.65</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-482.65</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <TaxId>520591484</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>4263218703PM</Dcn>
+        <SubscriberId>R60334028</SubscriberId>
+        <TransactionId>44150138662</TransactionId>
+        <PayeeIdentifier>1578597993</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-386.53</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-386.53</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <TaxId>520591656</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>42682K4883PM</Dcn>
+        <SubscriberId>R60334028</SubscriberId>
+        <TransactionId>44613547326</TransactionId>
+        <PayeeIdentifier>1578597993</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-386.53</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-386.53</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>190F1080</CoderId>
+        <OcProcessedDate>2018-10-31</OcProcessedDate>
+        <TaxId>520591656</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">190F1080</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>8462411513PM</Dcn>
+        <SubscriberId>R60337992</SubscriberId>
+        <TransactionId>44485727132</TransactionId>
+        <PayeeIdentifier>1255327201</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-573.62</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-573.62</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-02-22</OcProcessedDate>
+        <TaxId>911352172</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84632G6116PM</Dcn>
+        <SubscriberId>R60337992</SubscriberId>
+        <TransactionId>43257624770</TransactionId>
+        <PayeeIdentifier>1649209230</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">0</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">0</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>430F004</CoderId>
+        <OcProcessedDate>2019-03-04</OcProcessedDate>
+        <TaxId>916000986</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84686K0453PM</Dcn>
+        <SubscriberId>R60337992</SubscriberId>
+        <TransactionId>45245801244</TransactionId>
+        <PayeeIdentifier>1366556227</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">0</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">0</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>430F004</CoderId>
+        <OcProcessedDate>2019-03-04</OcProcessedDate>
+        <TaxId>911352172</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84601I2751PM</Dcn>
+        <SubscriberId>R60573788</SubscriberId>
+        <TransactionId>40750831845</TransactionId>
+        <PayeeIdentifier>364640211</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-458.72</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-458.72</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-02-25</OcProcessedDate>
+        <TaxId>364640211</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F043A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>84671B1871PM</Dcn>
+        <SubscriberId>R60573788</SubscriberId>
+        <TransactionId>44338021075</TransactionId>
+        <PayeeIdentifier>364640211</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-458.72</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-458.72</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>AUDIT</CoderId>
+        <OcProcessedDate>2019-02-25</OcProcessedDate>
+        <TaxId>364640211</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F043A</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>8450151860PM</Dcn>
+        <SubscriberId>R60728715</SubscriberId>
+        <TransactionId>48472744646</TransactionId>
+        <PayeeIdentifier>1447406699</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-663.41</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-663.41</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F004</CoderId>
+        <OcProcessedDate>2019-02-28</OcProcessedDate>
+        <TaxId>383769889</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="pm:DetailTypePREMERA">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>430</PlanCode>
+        <Dcn>8450742227PM</Dcn>
+        <SubscriberId>R60849931</SubscriberId>
+        <TransactionId>40023245661</TransactionId>
+        <PayeeIdentifier>1053357244</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-2936.75</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-1237.75</ClaimPaidAmount>
+        <DateGroupCode>BCP03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>430F309</CoderId>
+        <OcProcessedDate>2019-03-12</OcProcessedDate>
+        <TaxId>562392010</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">430F309</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Trailer>
+        <RecordCount>43</RecordCount>
+        <RecordTotal currency="dollars">-21678.25</RecordTotal>
+    </Trailer>
+</CashManagementTransaction>
