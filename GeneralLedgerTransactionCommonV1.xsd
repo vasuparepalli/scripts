@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xs:element name="GeneralLedgerTransaction">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Header" type="HeaderType" />
+				<xs:element ref="Detail" maxOccurs="unbounded" />
+				<xs:element name="Trailer" type="TrailerType" />
+			</xs:sequence>
+			<xs:attribute name="schemaVersion" type="xs:string"
+				default="1" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Detail" type="DetailType" />
+
+	<xs:complexType name="HeaderType">
+		<xs:sequence>
+			<xs:element name="PlanOrganization" type="PlanOrganizationType" />
+			<xs:element ref="ActivityTimestamp" />
+			<xs:element ref="LineOfBusiness" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="PlanOrganizationType">
+		<xs:restriction base="xs:string" />
+	</xs:simpleType>
+
+	<xs:element name="ActivityTimestamp" type="xs:dateTime" />
+
+	<xs:element name="LineOfBusiness">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="FEP" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:complexType name="DetailType">
+		<xs:sequence>
+			<xs:element ref="EntityCode" />
+			<xs:element ref="AccountNumber" />
+			<xs:element ref="CostCenter" />
+			<xs:element ref="CostCenterPool" />
+			<xs:element ref="Site" />
+			<xs:element ref="Risk" />
+			<xs:element ref="Product" />
+			<xs:element ref="Market" />
+			<xs:element ref="Operations" />
+			<xs:element ref="Project" />
+			<xs:element ref="CjaCode" />
+			<xs:element ref="Future" />
+			<xs:element ref="Source" />
+			<xs:element ref="CycleDate" />
+			<xs:element ref="GLAmount" />
+			<xs:element ref="GLDescription" />
+			<xs:element ref="ReversalFlag" />
+			<xs:element ref="GLSource" />
+			<xs:element ref="GLCategory" />
+			<xs:element ref="CustomElements" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="EntityCode">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="AccountNumber">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="CostCenter">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="CostCenterPool">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="Site">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="Risk">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="Product">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="Market">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="Operations">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="Project">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="CjaCode">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="Future">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="Source">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="CycleDate" type="xs:date" />
+
+	<xs:element name="GLAmount">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:decimal">
+					<xs:attribute name="currency" use="optional" default="dollars">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="dollars" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="GLDescription">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>	
+
+	<xs:element name="ReversalFlag">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>		
+	
+	<xs:element name="GLSource">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>		
+	
+	<xs:element name="GLCategory">
+		<xs:simpleType>
+			<xs:restriction base="xs:string" />
+		</xs:simpleType>
+	</xs:element>		
+
+	<xs:element name="CustomElements">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CustomElement" type="CustomElementType"
+					maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="CustomElementType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="name" type="xs:string" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="TrailerType">
+		<xs:sequence>
+			<xs:element ref="RecordCount" />
+			<xs:element ref="RecordTotal" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="RecordCount">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="RecordTotal">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:decimal">
+					<xs:attribute name="currency" use="optional" default="dollars">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="dollars" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>		
