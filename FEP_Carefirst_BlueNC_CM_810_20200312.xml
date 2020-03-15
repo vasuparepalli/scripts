@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CashManagementTransaction xmlns="http://www.carefirst.com/CashManagementTransactionCommonV1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nc="http://www.carefirst.com/CashManagementTransactionBCBSNCV1" xsi:schemaLocation="http://www.carefirst.com/CashManagementTransactionCommonV1 CashManagementTransactionCommonV1.xsd http://www.carefirst.com/CashManagementTransactionBCBSNCV1 CashManagementTransactionBCBSNCV1.xsd">
+    <Header>
+        <PlanOrganization>BCBSNC</PlanOrganization>
+        <ActivityTimestamp>2020-03-12T00:07:52.614-04:00</ActivityTimestamp>
+        <LineOfBusiness>FEP</LineOfBusiness>
+    </Header>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276307NC</Dcn>
+        <SubscriberId>R02331368</SubscriberId>
+        <TransactionId>43021376865</TransactionId>
+        <PayeeIdentifier>96837000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-33</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-33</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F995</CoderId>
+        <CashReceiptNumber>CM12628504</CashReceiptNumber>
+        <OcProcessedDate>2018-11-27</OcProcessedDate>
+        <TaxId>561863378</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F995</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276332NC</Dcn>
+        <SubscriberId>R03256448</SubscriberId>
+        <TransactionId>43026380309</TransactionId>
+        <PayeeIdentifier>96837000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-9</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-9</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>310F995</CoderId>
+        <CashReceiptNumber>CM12790303</CashReceiptNumber>
+        <OcProcessedDate>2018-12-04</OcProcessedDate>
+        <TaxId>561863378</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F995</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276342NC</Dcn>
+        <SubscriberId>R03393659</SubscriberId>
+        <TransactionId>43016532430</TransactionId>
+        <PayeeIdentifier>00393000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-143.18</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-143.18</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F043</CoderId>
+        <CashReceiptNumber>CM12706212</CashReceiptNumber>
+        <OcProcessedDate>2018-11-19</OcProcessedDate>
+        <TaxId>560887181</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F043</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276326NC</Dcn>
+        <SubscriberId>R04174723</SubscriberId>
+        <TransactionId>43000698684</TransactionId>
+        <PayeeIdentifier>001GP001</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-21.14</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-21.14</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>310F984</CoderId>
+        <CashReceiptNumber>WO DUE TO </CashReceiptNumber>
+        <OcProcessedDate>2018-10-26</OcProcessedDate>
+        <TaxId>560552787</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276320NC</Dcn>
+        <SubscriberId>R05861837</SubscriberId>
+        <TransactionId>43051638454</TransactionId>
+        <PayeeIdentifier>00492001</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-468.75</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-232.19</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>310F081</CoderId>
+        <CashReceiptNumber>CM12637603</CashReceiptNumber>
+        <OcProcessedDate>2019-01-11</OcProcessedDate>
+        <TaxId>560562304</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F081</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276354NC</Dcn>
+        <SubscriberId>R12326036</SubscriberId>
+        <TransactionId>43040906303</TransactionId>
+        <PayeeIdentifier>R12326036</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-33.96</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-33.96</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F098</CoderId>
+        <OcProcessedDate>2018-12-26</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F098</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276331NC</Dcn>
+        <SubscriberId>R12985978</SubscriberId>
+        <TransactionId>43026400721</TransactionId>
+        <PayeeIdentifier>96837000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-24</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-24</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F995</CoderId>
+        <CashReceiptNumber>CM12790305</CashReceiptNumber>
+        <OcProcessedDate>2018-12-04</OcProcessedDate>
+        <TaxId>561863378</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F995</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276346NC</Dcn>
+        <SubscriberId>R15319784</SubscriberId>
+        <TransactionId>43035165400</TransactionId>
+        <PayeeIdentifier>1568727048MI</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-34.24</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-34.24</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F995</CoderId>
+        <CashReceiptNumber>CM12625501</CashReceiptNumber>
+        <OcProcessedDate>2018-12-17</OcProcessedDate>
+        <TaxId>800818718</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F995</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276306NC</Dcn>
+        <SubscriberId>R50243770</SubscriberId>
+        <TransactionId>43021377445</TransactionId>
+        <PayeeIdentifier>96837000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-14</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-14</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F995</CoderId>
+        <CashReceiptNumber>CM12628503</CashReceiptNumber>
+        <OcProcessedDate>2018-11-27</OcProcessedDate>
+        <TaxId>561863378</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F995</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276335NC</Dcn>
+        <SubscriberId>R50496888</SubscriberId>
+        <TransactionId>43029772992</TransactionId>
+        <PayeeIdentifier>00087000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-56.89</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-56.89</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>310F984</CoderId>
+        <CashReceiptNumber>CM12710007</CashReceiptNumber>
+        <OcProcessedDate>2018-12-08</OcProcessedDate>
+        <TaxId>560845796</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276321NC</Dcn>
+        <SubscriberId>R50807474</SubscriberId>
+        <TransactionId>43040833495</TransactionId>
+        <PayeeIdentifier>1447250253MI</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-1191.26</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-305.50</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F984</CoderId>
+        <CashReceiptNumber>CM12798401</CashReceiptNumber>
+        <OcProcessedDate>2018-12-26</OcProcessedDate>
+        <TaxId>751837454</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276304NC</Dcn>
+        <SubscriberId>R57822406</SubscriberId>
+        <TransactionId>43008594476</TransactionId>
+        <PayeeIdentifier>021G4001</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-24</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-24</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F984</CoderId>
+        <CashReceiptNumber>CM12572202</CashReceiptNumber>
+        <OcProcessedDate>2018-11-07</OcProcessedDate>
+        <TaxId>542073193</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276376NC</Dcn>
+        <SubscriberId>R58420549</SubscriberId>
+        <TransactionId>43052853758</TransactionId>
+        <PayeeIdentifier>R58420549</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-153.56</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-153.56</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F098</CoderId>
+        <OcProcessedDate>2019-01-14</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F098</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276305NC</Dcn>
+        <SubscriberId>R58555964</SubscriberId>
+        <TransactionId>43031564035</TransactionId>
+        <PayeeIdentifier>91392000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-138</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-138</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>310F984</CoderId>
+        <CashReceiptNumber>CM12484802</CashReceiptNumber>
+        <OcProcessedDate>1018-12-13</OcProcessedDate>
+        <TaxId>561889210</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276329NC</Dcn>
+        <SubscriberId>R58685493</SubscriberId>
+        <TransactionId>43008744135</TransactionId>
+        <PayeeIdentifier>0003R000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-1340</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-1340</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>310F043</CoderId>
+        <CashReceiptNumber>CM12537414</CashReceiptNumber>
+        <OcProcessedDate>2018-11-07</OcProcessedDate>
+        <TaxId>562070036</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F043</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276318NC</Dcn>
+        <SubscriberId>R58713535</SubscriberId>
+        <TransactionId>43051539549</TransactionId>
+        <PayeeIdentifier>0003R000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-4061.78</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-4061.78</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F995</CoderId>
+        <CashReceiptNumber>CM12664309</CashReceiptNumber>
+        <OcProcessedDate>5019-01-10</OcProcessedDate>
+        <TaxId>562070036</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F995</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276330NC</Dcn>
+        <SubscriberId>R58830684</SubscriberId>
+        <TransactionId>43026454948</TransactionId>
+        <PayeeIdentifier>96837000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-24</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-24</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F995</CoderId>
+        <CashReceiptNumber>CM12790304</CashReceiptNumber>
+        <OcProcessedDate>2018-12-04</OcProcessedDate>
+        <TaxId>561863378</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F995</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276370NC</Dcn>
+        <SubscriberId>R58983543</SubscriberId>
+        <TransactionId>43043866071</TransactionId>
+        <PayeeIdentifier>R58983543</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-17.27</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-17.27</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F984</CoderId>
+        <CashReceiptNumber>WO DUE TO </CashReceiptNumber>
+        <OcProcessedDate>2018-12-31</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276301NC</Dcn>
+        <SubscriberId>R59118944</SubscriberId>
+        <TransactionId>43030281053</TransactionId>
+        <PayeeIdentifier>02C6Z001</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-158</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-50</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F984</CoderId>
+        <CashReceiptNumber>CM12722102</CashReceiptNumber>
+        <OcProcessedDate>2018-12-10</OcProcessedDate>
+        <TaxId>810862972</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276385NC</Dcn>
+        <SubscriberId>R59151173</SubscriberId>
+        <TransactionId>59058319504</TransactionId>
+        <PayeeIdentifier>R59151173</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-425</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-212.5</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F0004</CoderId>
+        <OcProcessedDate>2018-09-18</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F0004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276319NC</Dcn>
+        <SubscriberId>R59300923</SubscriberId>
+        <TransactionId>43051522056</TransactionId>
+        <PayeeIdentifier>00393000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-37.3</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-37.3</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F043</CoderId>
+        <CashReceiptNumber>CM12816101</CashReceiptNumber>
+        <OcProcessedDate>2019-01-11</OcProcessedDate>
+        <TaxId>560887181</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F043</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276311NC</Dcn>
+        <SubscriberId>R59598520</SubscriberId>
+        <TransactionId>42994746168</TransactionId>
+        <PayeeIdentifier>0003R000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-49.01</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-26.62</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CashReceiptNumber>CM12485227</CashReceiptNumber>
+        <OcProcessedDate>2018-10-18</OcProcessedDate>
+        <TaxId>562070036</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276323NC</Dcn>
+        <SubscriberId>R59691204</SubscriberId>
+        <TransactionId>43029778841</TransactionId>
+        <PayeeIdentifier>0004N000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-87.48</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-87.48</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>310F984</CoderId>
+        <CashReceiptNumber>CM12722020</CashReceiptNumber>
+        <OcProcessedDate>2018-12-08</OcProcessedDate>
+        <TaxId>562070036</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>18053134567NC</Dcn>
+        <SubscriberId>R59700700</SubscriberId>
+        <TransactionId>59058176020</TransactionId>
+        <PayeeIdentifier>R59700700</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-42.5</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-42.5</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F0004</CoderId>
+        <OcProcessedDate>2018-09-07</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F0004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276382NC</Dcn>
+        <SubscriberId>R59700770</SubscriberId>
+        <TransactionId>59058176248</TransactionId>
+        <PayeeIdentifier>R59700770</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-250</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-250</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>BASIC</PlanType>
+        <CoderId>310F0004</CoderId>
+        <OcProcessedDate>2018-09-07</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F0004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276381NC</Dcn>
+        <SubscriberId>R59760578</SubscriberId>
+        <TransactionId>59058176210</TransactionId>
+        <PayeeIdentifier>R59760578</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-250</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-250</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F0004</CoderId>
+        <CashReceiptNumber>WO01432786</CashReceiptNumber>
+        <OcProcessedDate>2018-09-07</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F0004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>18072763383NC</Dcn>
+        <SubscriberId>R59761220</SubscriberId>
+        <TransactionId>59058176265</TransactionId>
+        <PayeeIdentifier>R59761220</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-400</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-50</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CoderId>310F0004</CoderId>
+        <OcProcessedDate>2018-09-07</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F0004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276384NC</Dcn>
+        <SubscriberId>R59761220</SubscriberId>
+        <TransactionId>59058176288</TransactionId>
+        <PayeeIdentifier>R59761220</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-250</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-125</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CoderId>310F0004</CoderId>
+        <OcProcessedDate>2018-09-07</OcProcessedDate>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F0004</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276353NC</Dcn>
+        <SubscriberId>R60009917</SubscriberId>
+        <TransactionId>43020349362</TransactionId>
+        <PayeeIdentifier>0003R000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-419.14</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-419.14</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>FOCUS</PlanType>
+        <CashReceiptNumber>CM12613607</CashReceiptNumber>
+        <OcProcessedDate>2018-11-26</OcProcessedDate>
+        <TaxId>562070036</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Detail xsi:type="nc:DetailTypeBCBSNC">
+        <CycleDate>2020-03-11</CycleDate>
+        <PlanCode>810</PlanCode>
+        <Dcn>1807276315NC</Dcn>
+        <SubscriberId>R60045779</SubscriberId>
+        <TransactionId>42987327363</TransactionId>
+        <PayeeIdentifier>00190000</PayeeIdentifier>
+        <PriorClaimPaidAmount currency="dollars">-1846.77</PriorClaimPaidAmount>
+        <ClaimPaidAmount currency="dollars">-25.46</ClaimPaidAmount>
+        <DateGroupCode>BCBS03112020</DateGroupCode>
+        <PlanType>STD</PlanType>
+        <CashReceiptNumber>WO DUE TO </CashReceiptNumber>
+        <OcProcessedDate>2018-10-08</OcProcessedDate>
+        <TaxId>560928089</TaxId>
+        <CustomElements>
+            <CustomElement name="KeyerId">310F984</CustomElement>
+        </CustomElements>
+    </Detail>
+    <Trailer>
+        <RecordCount>30</RecordCount>
+        <RecordTotal currency="dollars">-8241.71</RecordTotal>
+    </Trailer>
+</CashManagementTransaction>
