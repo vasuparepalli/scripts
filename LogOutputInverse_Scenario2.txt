@@ -1,0 +1,2413 @@
+ INFO [main] (Main.java68) - Expected File -- D:\NK\OneDrive - LTI\Other\fvr\200423_frlncr_vasu\200816_VasuFilesProd\testcase5_200816\actual\1205896446.txt
+
+
+1205896446.txt
+ INFO [main] (Main.java108) - Success : Expected Data is: ST*835*0004~
+ INFO [main] (Main.java109) - Success : Actual Data is: ST*835*0004~
+
+
+Expected line number:-2-BPR*I*3898.75*C*ACH*CCP*01*031100225*DA*8017405047*1530078070**01*054000030*DA*5557245702*20200817
+Actual line number:-2-BPR*I*3898.75*C*ACH*CCP*01*031100225*DA*8017405047*1530078070**01*054000030*DA*5557245702*20200608
+ INFO [main] (Main.java241) - Failure : Expected Data is: BPR*I*3898.75*C*ACH*CCP*01*031100225*DA*8017405047*1530078070**01*054000030*DA*5557245702*20200817
+ INFO [main] (Main.java242) - Failure : Actual Data is: BPR*I*3898.75*C*ACH*CCP*01*031100225*DA*8017405047*1530078070**01*054000030*DA*5557245702*20200608
+
+
+Expected line number:-3-TRN*1*2000000747*1530078070
+Actual line number:-3-TRN*1*2000000675*1530078070
+ INFO [main] (Main.java241) - Failure : Expected Data is: TRN*1*2000000747*1530078070
+ INFO [main] (Main.java242) - Failure : Actual Data is: TRN*1*2000000675*1530078070
+
+ INFO [main] (Main.java108) - Success : Expected Data is: REF*F2*600~
+ INFO [main] (Main.java109) - Success : Actual Data is: REF*F2*600~
+
+
+Expected line number:-5-DTM*405*20200817
+Actual line number:-5-DTM*405*20200608
+ INFO [main] (Main.java241) - Failure : Expected Data is: DTM*405*20200817
+ INFO [main] (Main.java242) - Failure : Actual Data is: DTM*405*20200608
+
+ INFO [main] (Main.java108) - Success : Expected Data is: N1*PR*GHMSI~
+ INFO [main] (Main.java109) - Success : Actual Data is: N1*PR*GHMSI~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: N3*840 FIRST STREET NE~
+ INFO [main] (Main.java109) - Success : Actual Data is: N3*840 FIRST STREET NE~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: N4*WASHINGTON*DC*20065~
+ INFO [main] (Main.java109) - Success : Actual Data is: N4*WASHINGTON*DC*20065~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: REF*2U*080~
+ INFO [main] (Main.java109) - Success : Actual Data is: REF*2U*080~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: PER*BL**EM*HIPAA.PARTNER@CAREFIRST.COM*TE*8775268390~
+ INFO [main] (Main.java109) - Success : Actual Data is: PER*BL**EM*HIPAA.PARTNER@CAREFIRST.COM*TE*8775268390~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: N1*PE*SUBURBAN HOSPITAL*XX*1205896446~
+ INFO [main] (Main.java109) - Success : Actual Data is: N1*PE*SUBURBAN HOSPITAL*XX*1205896446~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: N3*PO BOX 824307~
+ INFO [main] (Main.java109) - Success : Actual Data is: N3*PO BOX 824307~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: N4*PHILADELPHIA*PA*191824304~
+ INFO [main] (Main.java109) - Success : Actual Data is: N4*PHILADELPHIA*PA*191824304~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: REF*TJ*520610545~
+ INFO [main] (Main.java109) - Success : Actual Data is: REF*TJ*520610545~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LX*1~
+ INFO [main] (Main.java109) - Success : Actual Data is: LX*1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CLP*300028132200*2*2400.73*1293.97*7.75*12*7080AD1717P*11*1~
+ INFO [main] (Main.java109) - Success : Actual Data is: CLP*300028132200*2*2400.73*1293.97*7.75*12*7080AD1717P*11*1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*QC*1*HATWELL*RONALD*J***MI*R11215324~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*QC*1*HATWELL*RONALD*J***MI*R11215324~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*232*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*232*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*233*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*233*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*050*20170330~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*050*20170330~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*AU*2400.73~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*AU*2400.73~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0121*785.16*424.55**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0121*785.16*424.55**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*60.47~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*60.47~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*300.14~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*300.14~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*724.69~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*724.69~
+
+
+Expected line number:-29-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-30-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0221*238.36*128.89**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0221*238.36*128.89**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*18.36~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*18.36~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*91.11~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*91.11~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*220~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*220~
+
+
+Expected line number:-37-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-38-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0250*129.38*69.96**19~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0250*129.38*69.96**19~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*9.96~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*9.96~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*49.46~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*49.46~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*119.42~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*119.42~
+
+
+Expected line number:-45-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-46-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0301*200.36*108.34**7~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0301*200.36*108.34**7~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*15.43~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*15.43~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*76.59~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*76.59~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*184.93~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*184.93~
+
+
+Expected line number:-53-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-54-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0305*68.04*36.79**4~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0305*68.04*36.79**4~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*5.24~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*5.24~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*26.01~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*26.01~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*62.8~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*62.8~
+
+
+Expected line number:-61-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-62-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0324*214.21*115.83**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0324*214.21*115.83**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*16.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*16.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*81.88~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*81.88~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*197.71~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*197.71~
+
+
+Expected line number:-69-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-70-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0352*205.76*111.27**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0352*205.76*111.27**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*15.84~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*15.84~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*78.65~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*78.65~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*189.92~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*189.92~
+
+
+Expected line number:-77-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-78-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0451*62.74*33.93**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0451*62.74*33.93**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*4.83~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*4.83~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*23.98~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*23.98~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*57.91~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*57.91~
+
+
+Expected line number:-85-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-86-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0452*313.69*169.63**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0452*313.69*169.63**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*24.15~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*24.15~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*119.91~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*119.91~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*289.54~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*289.54~
+
+
+Expected line number:-93-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-94-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0762*175.28*94.78**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0762*175.28*94.78**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*13.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*13.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*67~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*67~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*161.78~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*161.78~
+
+
+Expected line number:-101-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-102-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0993*2.5*0**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0993*2.5*0**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*2.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*2.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-108-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0994*5.25*0**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0994*5.25*0**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*5.25~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*5.25~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-114-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CLP*300027528801*2*6848.15*30.3*31*12*7084AC5806P*11*1~
+ INFO [main] (Main.java109) - Success : Actual Data is: CLP*300027528801*2*6848.15*30.3*31*12*7084AC5806P*11*1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*QC*1*LEVENTHAL*SUSAN*E***MI*R18634997~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*QC*1*LEVENTHAL*SUSAN*E***MI*R18634997~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*232*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*232*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*233*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*233*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*050*20170330~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*050*20170330~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*AU*6848.15~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*AU*6848.15~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0121*3140.64*13.95**4~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0121*3140.64*13.95**4~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*233.53~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*233.53~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*2893.16~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*2893.16~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*2907.11~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*2907.11~
+
+
+Expected line number:-128-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-129-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0221*238.36*1.06**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0221*238.36*1.06**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*17.72~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*17.72~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*219.58~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*219.58~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*220.64~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*220.64~
+
+
+Expected line number:-136-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-137-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0250*977.75*4.35**73~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0250*977.75*4.35**73~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*72.7~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*72.7~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*900.7~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*900.7~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*905.05~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*905.05~
+
+
+Expected line number:-144-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-145-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0301*652.08*2.9**36~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0301*652.08*2.9**36~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*48.49~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*48.49~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*600.69~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*600.69~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*603.59~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*603.59~
+
+
+Expected line number:-152-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-153-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0305*83.16*0.37**5~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0305*83.16*0.37**5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*6.18~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*6.18~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*76.61~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*76.61~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*76.98~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*76.98~
+
+
+Expected line number:-160-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-161-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0306*226.83*1.01**5~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0306*226.83*1.01**5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*16.86~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*16.86~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*208.96~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*208.96~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*209.97~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*209.97~
+
+
+Expected line number:-168-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-169-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0307*17.01*0.08**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0307*17.01*0.08**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*1.26~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*1.26~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*15.67~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*15.67~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*15.75~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*15.75~
+
+
+Expected line number:-176-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0420*0.02*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0420*0.02*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*0.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*0.02~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*0.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*0.02~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0424*170.4*0.75**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0424*170.4*0.75**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*12.67~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*12.67~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*156.98~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*156.98~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*157.73~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*157.73~
+
+
+Expected line number:-188-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-189-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0430*0.02*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0430*0.02*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*0.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*0.02~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*0.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*0.02~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0434*307.08*1.37**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0434*307.08*1.37**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*22.83~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*22.83~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*282.88~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*282.88~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*284.25~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*284.25~
+
+
+Expected line number:-201-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-202-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0451*62.74*0.28**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0451*62.74*0.28**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*4.67~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*4.67~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*57.79~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*57.79~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*58.07~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*58.07~
+
+
+Expected line number:-209-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-210-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0452*941.06*4.18**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0452*941.06*4.18**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*69.98~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*69.98~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*866.9~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*866.9~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*871.08~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*871.08~
+
+
+Expected line number:-217-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-218-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0993*10*0**4~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0993*10*0**4~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*10~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*10~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-224-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0994*21*0**4~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0994*21*0**4~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170215~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170215~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170220~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170220~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*21~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*21~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-230-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CLP*300027639000*2*15979.04*1301.55*15.5*12*7085A70378P*11*1~
+ INFO [main] (Main.java109) - Success : Actual Data is: CLP*300027639000*2*15979.04*1301.55*15.5*12*7085A70378P*11*1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*QC*1*SIBLEY*SCOTT*F***MI*R50579138~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*QC*1*SIBLEY*SCOTT*F***MI*R50579138~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*232*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*232*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*233*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*233*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*050*20170330~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*050*20170330~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*AU*15979.04~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*AU*15979.04~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0121*1570.32*128.03**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0121*1570.32*128.03**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*122.57~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*122.57~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*1319.72~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*1319.72~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*1447.75~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*1447.75~
+
+
+Expected line number:-244-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-245-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0221*238.36*19.43**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0221*238.36*19.43**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*18.61~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*18.61~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*200.32~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*200.32~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*219.75~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*219.75~
+
+
+Expected line number:-252-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-253-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0250*231.79*18.9**52~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0250*231.79*18.9**52~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*18.09~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*18.09~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*194.8~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*194.8~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*213.7~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*213.7~
+
+
+Expected line number:-260-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-261-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0270*66.86*5.45**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0270*66.86*5.45**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*5.22~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*5.22~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*56.19~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*56.19~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*61.64~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*61.64~
+
+
+Expected line number:-268-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-269-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0272*668.13*54.48**8~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0272*668.13*54.48**8~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*52.15~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*52.15~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*561.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*561.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*615.98~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*615.98~
+
+
+Expected line number:-276-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-277-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0278*8009.74*653.05**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0278*8009.74*653.05**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*625.22~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*625.22~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*6731.47~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*6731.47~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*7384.52~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*7384.52~
+
+
+Expected line number:-284-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-285-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0301*20.79*1.69**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0301*20.79*1.69**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*1.62~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*1.62~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*17.48~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*17.48~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*19.17~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*19.17~
+
+
+Expected line number:-292-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-293-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0305*37.8*3.08**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0305*37.8*3.08**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*2.95~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*2.95~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*31.77~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*31.77~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*34.85~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*34.85~
+
+
+Expected line number:-300-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-301-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0320*53.55*4.37**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0320*53.55*4.37**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*4.18~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*4.18~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*45~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*45~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*49.37~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*49.37~
+
+
+Expected line number:-308-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-309-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0360*4214.7*343.63**126~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0360*4214.7*343.63**126~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*328.99~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*328.99~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*3542.08~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*3542.08~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*3885.71~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*3885.71~
+
+
+Expected line number:-316-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-317-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0370*50.4*4.11**126~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0370*50.4*4.11**126~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*3.93~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*3.93~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*42.36~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*42.36~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*46.47~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*46.47~
+
+
+Expected line number:-324-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-325-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0420*255.56*20.84**6~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0420*255.56*20.84**6~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*19.95~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*19.95~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*214.77~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*214.77~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*235.61~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*235.61~
+
+
+Expected line number:-332-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-333-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0424*340.8*27.79**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0424*340.8*27.79**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*26.6~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*26.6~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*286.41~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*286.41~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*314.2~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*314.2~
+
+
+Expected line number:-340-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-341-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0430*0.02*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0430*0.02*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*0.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*0.02~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*0.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*0.02~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0434*204.72*16.7**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0434*204.72*16.7**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*15.98~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*15.98~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*172.04~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*172.04~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*188.74~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*188.74~
+
+
+Expected line number:-353-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-354-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0993*5*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0993*5*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-360-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0994*10.5*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0994*10.5*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*10.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*10.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-366-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CLP*300028137900*2*2932.09*1293.96*7.75*12*7085AO2557P*11*1~
+ INFO [main] (Main.java109) - Success : Actual Data is: CLP*300028137900*2*2932.09*1293.96*7.75*12*7085AO2557P*11*1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*QC*1*YEATMAN*FRANCIS*E**C*MI*R51013973~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*QC*1*YEATMAN*FRANCIS*E**C*MI*R51013973~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*IL*1*YEATMAN*VERONICA*S***MI*R51013973~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*IL*1*YEATMAN*VERONICA*S***MI*R51013973~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*232*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*232*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*233*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*233*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*050*20170330~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*050*20170330~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*AU*2932.09~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*AU*2932.09~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0121*785.16*347.42**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0121*785.16*347.42**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*60.73~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*60.73~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*377.01~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*377.01~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*724.43~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*724.43~
+
+
+Expected line number:-381-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-382-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0221*238.36*105.47**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0221*238.36*105.47**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*18.44~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*18.44~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*114.45~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*114.45~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*219.92~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*219.92~
+
+
+Expected line number:-389-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-390-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0250*116.21*51.43**35~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0250*116.21*51.43**35~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*8.98~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*8.98~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*55.8~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*55.8~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*107.23~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*107.23~
+
+
+Expected line number:-397-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-398-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0274*68.38*30.25**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0274*68.38*30.25**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*5.29~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*5.29~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*32.84~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*32.84~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*63.09~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*63.09~
+
+
+Expected line number:-405-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-406-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0301*243.81*107.89**14~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0301*243.81*107.89**14~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*18.85~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*18.85~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*117.07~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*117.07~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*224.96~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*224.96~
+
+
+Expected line number:-413-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-414-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0305*79.38*35.12**5~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0305*79.38*35.12**5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*6.14~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*6.14~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*38.12~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*38.12~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*73.24~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*73.24~
+
+
+Expected line number:-421-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-422-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0351*318.93*141.12**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0351*318.93*141.12**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*24.67~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*24.67~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*153.14~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*153.14~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*294.26~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*294.26~
+
+
+Expected line number:-429-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-430-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0352*120.03*53.11**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0352*120.03*53.11**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*9.28~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*9.28~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*57.64~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*57.64~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*110.75~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*110.75~
+
+
+Expected line number:-437-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-438-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0440*0.03*0.01**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0440*0.03*0.01**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*0.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*0.02~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*0.03~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*0.03~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0444*87.5*38.72**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0444*87.5*38.72**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*6.77~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*6.77~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*42.01~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*42.01~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*80.73~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*80.73~
+
+
+Expected line number:-450-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-451-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0451*62.74*27.76**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0451*62.74*27.76**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*4.85~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*4.85~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*30.13~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*30.13~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*57.89~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*57.89~
+
+
+Expected line number:-458-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-459-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0452*313.69*138.8**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0452*313.69*138.8**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*24.26~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*24.26~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*150.63~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*150.63~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*289.43~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*289.43~
+
+
+Expected line number:-466-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-467-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0612*229.68*101.63**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0612*229.68*101.63**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*17.76~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*17.76~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*110.29~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*110.29~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*211.92~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*211.92~
+
+
+Expected line number:-474-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-475-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0730*85.16*37.68**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0730*85.16*37.68**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*6.59~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*6.59~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*40.89~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*40.89~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*78.57~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*78.57~
+
+
+Expected line number:-482-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-483-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0762*175.28*77.55**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0762*175.28*77.55**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*13.56~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*13.56~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*84.17~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*84.17~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*161.72~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*161.72~
+
+
+Expected line number:-490-LQ*HE*N45
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N45
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+
+Expected line number:-491-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0993*2.5*0**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0993*2.5*0**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*2.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*2.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-497-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0994*5.25*0**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0994*5.25*0**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20170308~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20170308~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20170310~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20170310~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*5.25~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*5.25~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-503-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CLP*300042644103*2*14138.83*1309.84*21.5*12*8286AH2804P*11*7~
+ INFO [main] (Main.java109) - Success : Actual Data is: CLP*300042644103*2*14138.83*1309.84*21.5*12*8286AH2804P*11*7~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*QC*1*FUSTER*MARIA****MI*R50548973~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*QC*1*FUSTER*MARIA****MI*R50548973~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*IL*1*FUSTER*JOSE*O***MI*R50548973~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*IL*1*FUSTER*JOSE*O***MI*R50548973~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*232*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*232*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*233*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*233*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*050*20181031~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*050*20181031~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*AU*14117.33~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*AU*14117.33~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0121*1896.7*175.99**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0121*1896.7*175.99**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*4.05~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*4.05~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*1716.66~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*1716.66~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*1892.65~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*1892.65~
+
+
+Expected line number:-518-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0221*215.91*20.03**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0221*215.91*20.03**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*0.46~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*0.46~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*195.42~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*195.42~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*215.45~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*215.45~
+
+
+Expected line number:-525-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0250*281.19*26.09**62~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0250*281.19*26.09**62~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*0.6~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*0.6~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*254.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*254.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*280.59~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*280.59~
+
+
+Expected line number:-532-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0270*246.08*22.83**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0270*246.08*22.83**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*0.53~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*0.53~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*222.72~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*222.72~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*245.55~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*245.55~
+
+
+Expected line number:-539-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0272*4714.09*437.39**24~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0272*4714.09*437.39**24~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*10.07~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*10.07~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*4266.63~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*4266.63~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*4704.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*4704.02~
+
+
+Expected line number:-546-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0301*210.18*19.5**9~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0301*210.18*19.5**9~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*0.45~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*0.45~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*190.23~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*190.23~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*209.73~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*209.73~
+
+
+Expected line number:-553-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0305*54.24*5.03**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0305*54.24*5.03**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*0.12~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*0.12~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*49.09~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*49.09~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*54.12~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*54.12~
+
+
+Expected line number:-560-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0310*316.4*29.35**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0310*316.4*29.35**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*0.68~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*0.68~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*286.37~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*286.37~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*315.72~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*315.72~
+
+
+Expected line number:-567-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0360*5872.86*544.9**158~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0360*5872.86*544.9**158~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*12.54~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*12.54~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*5315.42~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*5315.42~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*5860.32~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*5860.32~
+
+
+Expected line number:-574-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0370*309.68*28.73**158~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0370*309.68*28.73**158~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*0.66~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*0.66~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*280.29~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*280.29~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*309.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*309.02~
+
+
+Expected line number:-581-LQ*HE*N174
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*N174
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0991*6*0**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0991*6*0**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*6~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*6~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-587-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0993*5*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0993*5*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-593-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0994*10.5*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0994*10.5*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*10.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*10.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: LQ*HE*N174~
+ INFO [main] (Main.java109) - Success : Actual Data is: LQ*HE*N174~
+
+
+Expected line number:-599-LQ*HE*M80
+Actual line number:-N/A-Absent
+ INFO [main] (Main.java241) - Failure : Expected Data is: LQ*HE*M80
+ INFO [main] (Main.java242) - Failure : Actual Data is: Absent
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CLP*300042644100*22*-14274.43*-1330.87**12*8286AH2804P*11*1~
+ INFO [main] (Main.java109) - Success : Actual Data is: CLP*300042644100*22*-14274.43*-1330.87**12*8286AH2804P*11*1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*QC*1*FUSTER*MARIA****MI*R50548973~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*QC*1*FUSTER*MARIA****MI*R50548973~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*IL*1*FUSTER*JOSE*O***MI*R50548973~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*IL*1*FUSTER*JOSE*O***MI*R50548973~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+ INFO [main] (Main.java109) - Success : Actual Data is: NM1*82*1*SUBURBAN HOSPITAL, INC.*****XX*1205896446~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*232*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*232*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*233*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*233*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*050*20181011~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*050*20181011~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0121*-1896.7*-177.1**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0121*-1896.7*-177.1**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-147.11~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-147.11~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-1572.49~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-1572.49~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-1749.59~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-1749.59~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0221*-215.91*-20.16**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0221*-215.91*-20.16**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-16.74~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-16.74~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-179.01~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-179.01~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-199.17~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-199.17~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0250*-281.19*-26.26**62~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0250*-281.19*-26.26**62~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-21.81~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-21.81~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-233.12~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-233.12~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-259.38~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-259.38~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0270*-246.08*-22.98**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0270*-246.08*-22.98**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-19.09~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-19.09~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-204.01~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-204.01~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-226.99~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-226.99~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0272*-4714.09*-440.18**24~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0272*-4714.09*-440.18**24~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-365.63~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-365.63~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-3908.28~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-3908.28~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-4348.46~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-4348.46~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0301*-210.18*-19.63**9~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0301*-210.18*-19.63**9~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-16.3~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-16.3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-174.25~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-174.25~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-193.88~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-193.88~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0305*-54.24*-5.06**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0305*-54.24*-5.06**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-4.21~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-4.21~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-44.97~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-44.97~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-50.03~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-50.03~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0310*-452*-42.21**3~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0310*-452*-42.21**3~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-35.06~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-35.06~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-374.73~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-374.73~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-416.94~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-416.94~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0360*-5872.86*-548.38**158~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0360*-5872.86*-548.38**158~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-455.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-455.5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-4868.98~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-4868.98~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-5417.36~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-5417.36~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0370*-309.68*-28.91**158~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0370*-309.68*-28.91**158~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*CO*45*-24.02~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*CO*45*-24.02~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*OA*23*-256.75~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*OA*23*-256.75~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: AMT*B6*-285.66~
+ INFO [main] (Main.java109) - Success : Actual Data is: AMT*B6*-285.66~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0991*-6*0**1~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0991*-6*0**1~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*-6~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*-6~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0993*-5*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0993*-5*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*-5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*-5~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: SVC*NU:0994*-10.5*0**2~
+ INFO [main] (Main.java109) - Success : Actual Data is: SVC*NU:0994*-10.5*0**2~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*150*20180918~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*150*20180918~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: DTM*151*20180920~
+ INFO [main] (Main.java109) - Success : Actual Data is: DTM*151*20180920~
+
+ INFO [main] (Main.java108) - Success : Expected Data is: CAS*PR*96*-10.5~
+ INFO [main] (Main.java109) - Success : Actual Data is: CAS*PR*96*-10.5~
+
+
+Expected line number:-679-SE*679*0004
+Actual line number:-561-SE*561*0004
+ INFO [main] (Main.java241) - Failure : Expected Data is: SE*679*0004
+ INFO [main] (Main.java242) - Failure : Actual Data is: SE*561*0004
+
+[{Expected=20200817, Expected Line=2, FileName=1205896446.txt, Segment Name=BPR, Actual=20200608}, {Expected=2000000747, Expected Line=3, FileName=1205896446.txt, Segment Name=TRN, Actual=2000000675}, {Expected=20200817, Expected Line=5, FileName=1205896446.txt, Segment Name=DTM, Actual=20200608}, {Expected Line=29, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=30, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=37, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=38, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=45, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=46, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=53, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=54, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=61, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=62, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=69, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=70, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=77, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=78, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=85, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=86, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=93, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=94, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=101, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=102, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=108, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=114, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=128, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=129, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=136, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=137, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=144, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=145, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=152, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=153, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=160, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=161, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=168, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=169, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=176, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=188, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=189, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=201, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=202, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=209, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=210, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=217, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=218, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=224, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=230, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=244, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=245, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=252, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=253, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=260, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=261, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=268, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=269, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=276, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=277, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=284, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=285, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=292, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=293, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=300, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=301, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=308, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=309, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=316, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=317, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=324, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=325, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=332, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=333, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=340, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=341, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=353, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=354, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=360, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=366, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=381, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=382, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=389, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=390, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=397, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=398, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=405, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=406, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=413, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=414, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=421, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=422, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=429, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=430, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=437, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=438, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=450, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=451, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=458, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=459, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=466, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=467, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=474, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=475, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=482, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=483, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=490, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=491, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=497, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=503, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=518, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=525, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=532, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=539, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=546, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=553, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=560, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=567, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=574, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=581, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=587, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=593, FileName=1205896446.txt, Segment Name=LQ}, {Expected Line=599, FileName=1205896446.txt, Segment Name=LQ}, {Expected=679, Expected Line=679, FileName=1205896446.txt, Segment Name=SE, Actual=561}]
+ INFO [main] (Main.java68) - Expected File -- D:\NK\OneDrive - LTI\Other\fvr\200423_frlncr_vasu\200816_VasuFilesProd\testcase5_200816\actual\Act1205896446.txt
+
+
+Act1205896446.txt
+ INFO [main] (Main.java77) - Comparison done for all files.
